@@ -13,8 +13,8 @@ body {
     /* font-family: "Raleway", sans-serif; */
     font-family: "Lato", sans-serif;
     font-size: 1.4rem;
-    /* width: 1440px;
-    margin: auto; */
+    max-width: 1440px;
+    margin: auto;
 }
 
 img {
@@ -2402,3 +2402,326 @@ span.card-status {
 .cards-data:has(.row) {
     display: block !important;
 }
+
+section.booking-services h2 {
+    font-family: 'Raleway';
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 35.22px;
+    text-align: left;
+    color: var(--primary);
+    margin-left: 24px;
+}
+section.booking-services {
+    margin-top: 32px;
+    margin-bottom: 68px;
+}
+.service-card-data p {
+    font-family: 'Lato';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.8px;
+    text-align: left;
+}
+.service-card-data h5 {
+    font-family: 'Lato';
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    margin-bottom: 5px;
+    margin-top: 8px;
+    text-transform: capitalize;
+}
+.service-card-data img {
+    height: 65px;
+    width: 65px;
+    border-radius: 50px;
+    margin-right: 16px;
+}
+.service-card-data {
+    display: flex;
+    align-items: center;
+}
+.service-cards {
+    margin-top: 43px;
+    margin-left: 27px;
+    max-width: 87%;
+    margin-bottom: 59px;
+}
+.service-card-data:hover {
+    background: rgba(232, 85, 88, 0.2);
+    border-color: var(--primary);
+}
+.service-card-data {
+    display: flex;
+    align-items: center;
+    padding: 8px 8px;
+    margin-bottom: 11px;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+.booking-services .btn {
+    font-family: 'Lato';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 18px;
+    text-align: center;
+    display: block;
+    margin: auto;
+    max-width: 180px;
+    border-radius: 15px;
+    padding: 24px 10px;
+}
+.add-pet-card p {
+    font-family: 'Raleway';
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 30.52px;
+    text-align: center;
+    margin-top: 24px;
+}
+.add-pet-card {
+    max-width: 494px;
+    margin: auto;
+    border: 1px solid var(--Primary, rgba(232, 85, 88, 1));
+    border-radius: 30px;
+    margin-top: 108px;
+    text-align: center;
+    padding: 27px 10px;
+    margin-bottom: 116px;
+}
+.add-pet-btns .skip-btn {
+    color: rgba(161, 161, 161, 1);
+}
+.add-pet-btns a.btn {
+    border-radius: 15px;
+    padding: 24px 12px;
+    min-width: 180px;
+    text-align: center;
+}
+.add-pet-btns a {
+    font-family: 'Lato';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 18px;
+    text-align: left;
+    text-decoration: none;
+}
+.add-pet-btns {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 43px;
+    padding: 0px 28px 8px 28px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.calender-column {
+    box-shadow: 0px 6px 10px 2px rgba(0, 0, 0, 0.1);
+    max-width: 473px;
+    margin: auto;
+    border-radius: 17px;
+    position: relative;
+    padding: 12px 10px;
+}
+.calender-column .ui-datepicker-inline {
+    width: 100%;
+    border: none;
+}
+.calender-column a.ui-state-highlight {
+    background: var(--primary) !important;
+    color: var(--white) !important;
+}
+.calender-column .selected a{
+    background: var(--primary) !important;
+    color: var(--white) !important;
+  }
+.calender-column a.ui-state-default {
+    background: transparent;
+    border: none;
+    font-family: Lato;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: center;
+    border-radius: 50px;
+    height: 27px;
+    width: 27px;    
+    margin: auto;
+    color:var(--black);
+}
+span.ui-icon.ui-icon-circle-triangle-e {
+    background-image: url(../images/right-arrow.png);
+    background-position: center;
+}
+span.ui-icon.ui-icon-circle-triangle-w{
+    background-image: url(../images/left-arrow.png);
+    background-position: center;
+}
+.ui-datepicker-header span {
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.2px;
+    text-align: left;
+}
+.calender-column .ui-datepicker-header {
+    background: transparent;
+    border: none;
+    max-width: 70%;
+    margin-left: 10px;
+}
+.calender-column .ui-datepicker-calendar {
+    margin: 20px 0px;
+}
+.calender-column .ui-datepicker-calendar th span {
+    font-family: 'Lato';
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 18px;
+    text-align: left;
+    color: var(--primary);
+}
+.calender-column button#clearButton {
+    position: absolute;
+    right: 24px;
+    top: 20px;
+    font-family: 'Raleway';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.78px;
+    text-align: left;
+    color: var(--primary);
+    background: transparent;
+    border: 0px;
+}
+div#selectedCount {
+    text-align: center;
+    font-family: 'Lato';
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28.8px;
+    color: var(--primary);
+    padding-bottom: 5px;
+}
+section.pet-skip-calender h2 {
+    font-family: 'Lato';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+    text-align: center;
+    margin-top: 65px;
+    margin-bottom: 30px;
+}
+.calender-btns a.skip-btn {
+    border: 2px solid rgba(161, 161, 161, 1);
+    color: rgba(161, 161, 161, 1);
+}
+.calender-btns a {
+    font-family: 'Lato';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 18px;
+    text-align: left;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    min-width: 185px;
+    min-height: 65px;
+    border-radius: 15px;
+    margin: 0px 10px;
+}
+.calender-btns {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0px;
+    flex-wrap: wrap;
+}
+.calender-column th {
+    padding: 12px 2px;
+}
+.calender-column td {
+    padding: 10px 2px;
+}
+.pet-needs-walk h2 {
+    font-family: 'Raleway';
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 35.22px;
+    text-align: center;
+    color: var(--primary);
+}
+.pet-needs-walk {
+    margin-top: 90px;
+    padding: 47px 40px;
+}
+.pet-profile {
+    margin: 0px 10px;
+    cursor: pointer;
+}
+.pet-profile > div {
+    height: 165px;
+    width: 165px;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 17px;
+}
+.pet-profile > div img{
+    height: 129px;
+    width: 129px;
+    border-radius: 50px;
+    object-fit: cover;
+}
+.pet-profile:hover > div{
+    background-color: var(--primary);
+}
+.pets-forwalk-profile {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 66px;
+    flex-wrap: wrap;
+}
+@media(max-width:667px){
+    .pets-forwalk-profile {
+        justify-content: center;
+    }
+}
+.skip-btn:hover {
+    background: rgba(161, 161, 161, 1);
+    color: #fff;
+    transition: all 0.3s;
+}
+.skip-btn {
+    color: rgba(161, 161, 161, 1);
+    border: 2px solid rgba(161, 161, 161, 1);
+    transition: all 0.3s;
+}
+.walk-btns {
+    margin-top: 43px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0px 11px;
+}
+.walk-btns a {
+    padding: 24px 0px;
+    border-radius: 15px;
+    min-width: 180px;
+    margin: 0px 7px 7px 7px;
+    font-family: 'Lato';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 18px;
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+
+
