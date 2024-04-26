@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/rSlider.min.css">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/rehan.css" rel="stylesheet">
   </head>
@@ -57,14 +58,64 @@
             </div>
         </div>
     </header>
-    <section class="add-pet-confirmation">
+    <section class="filter-banner">
         <div class="container">
-            <div class="add-pet-card">
-                <img src="images/dble-pet2.png" alt="">
-                <p>You didn’t introduce your pet yet</p>
-                <div class="add-pet-btns">
-                    <a href="ifskip.html" class="skip-btn btn">Skip</a>
-                    <a href="needswalk.html" class="btn btn-primary">Add a Pet</a>
+            <div class="filter-search-input">
+                <img src="images/cat-foot.png" alt="">
+                <input type="search" class="form-control" placeholder="Find sitter by name">
+            </div>
+        </div>
+    </section>
+    <section class="filter-fields-section">
+        <div class="container">
+            <div class="filter-fields-container">
+                <h3>Search Filter</h3>
+                <div class="filter-fields-box">
+                    <label for="Results">Results Near</label>
+                    <div class="filter-search-input2">
+                        <img src="images/cat-foot.png" alt="">
+                        <input type="text" class="form-control" placeholder="Your current location" id="Results">
+                    </div>
+                    <label for="Dates">Select Dates</label>
+                    <input type="date" id="Dates" placeholder="No date set" class="form-control ">
+                    <label for="Select">Select Service</label>
+                    <select name="" id="Select" class="form-control">
+                        <option value="1">Select option</option>
+                        <option value="2">Select option 1</option>
+                        <option value="3">Select option 2</option>
+                    </select>
+
+                </div>
+                <div class="dog-sizes">
+                    <p>Sitter accepts following dog sizes</p>
+                    <div class="dog-size-boxes">
+                        <div class="dig-size-item">
+                            <img src="images/d1.png" alt="">
+                            <p>Small (0-7 kg)</p>
+                        </div>
+                        <div class="dig-size-item">
+                            <img src="images/d2.png" alt="">
+                            <p>Medium (8-18 kg)</p>
+                        </div>
+                        <div class="dig-size-item">
+                            <img src="images/d3.png" alt="">
+                            <p>Large (19-45 kg)</p>
+                        </div>
+                        <div class="dig-size-item">
+                            <img src="images/d4.png" alt="">
+                            <p>Giant (45+ kg)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="rnge-slider">
+                    <div class="price-range">
+                        <p>Price range</p>
+                        <input type="text" id="sampleSlider" />
+                    </div>
+                    <div class="radius-range">
+                        <p>Search by radius</p>
+                        <input type="text" id="sampleSlider2" />
+                    </div>
                 </div>
             </div>
         </div>
@@ -128,6 +179,33 @@
     </footer>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/rSlider.min.js"></script>
     <script src="js/scripts.js"></script>
+    <script>
+   var slider3 = new rSlider({
+        target: '#sampleSlider',
+        values: {min: 0, max: 50},
+        step: 5,
+        range: true,
+        set: [0, 50],
+        scale: false,
+        labels: false,
+        onChange: function (vals) {
+            console.log(vals);
+        }
+    });
+    var slider2 = new rSlider({
+        target: '#sampleSlider2',
+        values: {min: 2, max: 19},
+        step: 5,
+        range: true,
+        set: [0, 50],
+        scale: false,
+        labels: false,
+        onChange: function (vals) {
+            console.log(vals);
+        }
+    });
+    </script>
   </body>
 </html>

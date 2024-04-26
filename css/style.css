@@ -2722,6 +2722,415 @@ section.pet-skip-calender h2 {
     text-transform: capitalize;
     text-decoration: none;
 }
+.sitter-list-btns .btn {
+    font-family: 'Raleway';
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 23.48px;
+    text-align: left;
+    border-radius: 30px;
+    padding: 12px 18px;
+    margin-right: 16px;
+    margin-bottom: 5px;
+}
+.sitter-list-btns {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 56px;
+    padding: 0px 30px;
+}
+.search-feild {
+    border: 1px solid var(--primary);
+    background: rgba(241, 241, 241, 1);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding: 0px 6px;
+    margin-right: 19px;
+    margin-bottom: 5px;
+}
+.search-feild input {
+    background: transparent;
+    height: 100%;
+    border: none;
+    font-family: 'Raleway';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.78px;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.5);
+    padding: 15px 0px;
+    outline: 0;
+    min-width: 321px;
+}
+.tab-list-filter {
+    border: 1px solid rgba(232, 85, 88, 1);
+    border-radius: 30px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    min-width: 141px;
+    margin-right: 20px;
+    margin-bottom: 5px;
+}
+.tab-list-filter a {
+    height: 50px;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background: rgba(241, 241, 241, 1);
+}
+.tab-list-filter a svg path {
+    fill: var(--primary);
+}
+.tab-list-filter a.active svg path {
+    fill: var(--white);
+}
+.tab-list-filter a.active{
+    background: rgba(232, 85, 88, 1);
+}
+a.filter {
+    padding: 8px !important;
+    margin-bottom: 5px;
+}
+a.sort {
+    margin: 0px 0px 5px 5px !important;
+}
+.sitter-list-info {
+    margin-top: 37px;
+    padding: 0px 32px;
+}
+.sitter-tabs .review-card-top h3 {
+    margin-bottom: 3px;
+}
+.sitter-tabs .review-card-bottom .btn {
+    font-weight: 700;
+    padding: 4px 16px;
+}
+.sitter-map img {
+    height: 100%;
+    object-fit: cover;
+}
+.sitter-map {
+    height: 100%;
+}
+.sitter-tabs {
+    padding-bottom: 55px;
+}
+.sitter-tabs.active > .row .col-lg-6 {
+    width: 100%;
+}
+.sitter-tabs.active > .row .col-lg-6 .review-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 19px;
+}
+.sitter-tabs.active > .row .col-lg-6 .review-card .review-card-top  p {
+    text-align: left !important;
+}
+.sitter-tabs.active > .row .col-lg-6 .review-card .review-card-top h3 {
+    text-align: left !important;
+}
+.sitter-tabs.active > .row .col-lg-6 .review-card .review-card-top {
+    display: flex;
+    align-items: center;
+    text-align: left !important;
+    padding: 8px 0px 8px 15px;
+}
+.sitter-tabs.active > .row .col-lg-6 .review-card .review-card-bottom {
+    flex-direction: column;
+}
+.sitter-tabs.active > .row .col-lg-6 .review-card .review-card-bottom {
+    flex-direction: column;
+    flex-basis: 50%;
+    align-items: end;
+    padding: 0px 23px;
+}
+.sitter-tabs.active > .row .col-lg-6 .review-card .review-card-top img {
+    height: 123px;
+    width: 123px;
+    border-radius: 50px;
+    margin-right: 15px;
+}
+.sitter-tabs.active {
+    margin-top: 11px;
+}
+.sitter-tabs.active > .row .col-lg-6 .review-card .review-card-bottom .r-bottom-left {
+    margin-bottom: 22px;
+}
+section.filter-banner {
+    background-image: url(../images/sitter-banner.png);
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+    background-position: bottom;
+    padding: 50px 0px;
+    min-height: 316px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filter-search-input input {
+    height: 100%;
+    border: none;
+    font-family: 'Raleway';
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28.18px;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.5); 
+    box-shadow: none !important;
+}
+.filter-search-input {
+    display: flex;
+    max-width: 669px;
+    margin: auto;
+    align-items: center;
+    border: 1px solid var(--primary);
+    border-radius: 10px;
+    background: #fff;
+    height: 66px;
+    overflow: hidden;
+}
+section.filter-fields-section h3 {
+    font-family: 'Raleway';
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 35.22px;
+    color: var(--primary);
+    margin-bottom: 29px;
+}
+.filter-fields-box label {
+    font-family: 'Raleway';
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28.18px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.filter-fields-box input {
+    border-radius: 10px;
+    height: 59px;
+    font-family: 'Raleway';
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28.18px;
+    color: rgba(44, 30, 30, 0.7);
+    border: 1px solid rgba(18, 17, 11, 1);
+    margin-bottom: 27px;
+}
+.filter-fields-box select {
+    border-radius: 10px;
+    height: 59px;
+    font-family: 'Raleway';
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28.18px;
+    color: rgba(0, 0, 0, 0.7);
+    border: 1px solid rgba(18, 17, 11, 1);
+    margin-bottom: 27px;
+}
+.filter-search-input2 input {
+    border: none;
+    margin-bottom: 0px;
+}
+.filter-search-input2 {
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(18, 17, 11, 1);
+    border-radius: 10px;
+    padding: 0px 10px;
+    margin-bottom: 27px;
+}
+input {
+    box-shadow: none !important;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+    color: var(--primary) !important;
+    float: left;
+    position: absolute;
+    left: 20px;
+    filter: invert(10%);
+    width: 35px;
+    height: 35px;
+    
+}
+input#Dates {
+    padding: 0px 73px;
+    position: relative;
+}
+.filter-fields-container {
+    max-width: 984px;
+    margin: auto;
+    padding: 35px 47px;
+    margin-top: 41px;
+}
+.dog-sizes p {
+    font-family: 'Raleway';
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28.18px;
+    text-align: left;
+    margin-bottom: 3px;
+}
+.dog-size-boxes p {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 18.78px;
+    text-align: center;
+}
+.dog-size-boxes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.dig-size-item {
+    margin: 0px 6px 8px 6px;
+}
+.rs-bg {
+    height: 4px !important;
+    background-color: var(--Primary, rgb(232 85 88 / 40%)) !important;
+    border: none !important;
+    top: 16px !important;
+}
+.rs-selected {
+    height: 4px !important;
+    background: var(--primary) !important;
+    border: none !important;
+    top: 16px !important;
+}
+.rs-pointer {
+    height: 35px !important;
+    width: 35px !important;
+    border-radius: 50px !important;
+    background: var(--primary) !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+.rs-pointer:before{
+    display: none;
+}
+.rs-pointer:after{
+    display: none;
+}
+.rs-scale {
+    top: 31px !important;
+}
+.rs-scale span ins {
+    font-family: 'Raleway';
+    font-size: 24px !important;
+    font-weight: 700;
+    line-height: 28.18px;
+}
+.rs-tooltip {
+    display: none !important;
+}
+.rnge-slider {
+    margin-top: 16px;
+}
+.rnge-slider p {
+    font-family: 'Raleway';
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28.18px;
+    text-align: left;
+    margin-bottom: 18px;
+}
+.rs-container {
+    margin-bottom: 64px;
+}
+.price-range .rs-scale span:nth-child(1) ins {
+    position: relative;
+    margin-left: 2px !important;
+}
+.price-range .rs-scale span:nth-child(1) ins:before {
+    position: absolute;
+    content: "$";
+    left: -18px;
+    top: 1px;
+}
+.price-range .rs-scale span:nth-last-child(1) ins {
+    position: relative;
+    margin-right: 2px !important;
+}
+.price-range .rs-scale span:nth-last-child(1) ins:after {
+    position: absolute;
+    content: "%";
+    left: -18px;
+    top: 1px;
+}
+
+.radius-range .rs-scale span:nth-child(1) ins {
+    position: relative;
+    margin-left: -13px !important;
+}
+.radius-range .rs-scale span:nth-child(1) ins:before {
+    position: absolute;
+    content: "Km";
+    left: 19px;
+    top: 1px;
+}
+.radius-range .rs-scale span:nth-last-child(1) ins {
+    position: relative;
+    margin-left: -47px !important;
+}
+.radius-range .rs-scale span:nth-last-child(1) ins:after {
+    position: absolute;
+    content: "Km";
+    left: 31px;
+    top: 1px;
+}
+
+
+
+
+
+
+
+
+@media(max-width:1400px){
+    .sitter-list-info{
+        padding: 0px;
+    }
+    .sitter-list-btns{
+        padding: 0px;
+    }
+}
+@media(max-width:1200px){
+    .sitter-tabs .review-card-bottom {
+        flex-direction: column;
+    }
+    .sitter-tabs .review-card-bottom .r-bottom-left {
+        margin-bottom: 5px;
+    }
+}
+@media(max-width:991px){
+    .sitter-tabs .review-card-bottom {
+        flex-direction: row;
+    }
+    .sitter-tabs .review-card-bottom .r-bottom-left {
+        margin-bottom: 0px;
+    }
+    .search-feild input{
+        min-width: 100%;
+    }
+}
+@media(max-width:500px){
+    .sitter-tabs.active > .row .col-lg-6 .review-card {
+        flex-direction: column;
+        align-items: end;
+    }
+    .sitter-tabs.active > .row .col-lg-6 .review-card .review-card-bottom .r-bottom-left {
+        margin-bottom: 10px;
+    }
+    .sitter-tabs.active > .row .col-lg-6 .review-card .review-card-bottom .r-bottom-right {
+        margin-bottom: 10px;
+    }
+}
 
 
 

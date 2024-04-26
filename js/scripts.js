@@ -27,4 +27,17 @@ $(document).ready(function(){
         $(this).addClass('active').siblings().removeClass('active');
 
     })
+    $('body').on('click', ".list-filter" , function(e){
+        e.preventDefault();
+        $('.sitter-tabs').addClass('active');
+        $(this).addClass('active').siblings().removeClass('active');
+
+    })
+    $('body').on('click', ".tab-filter" , function(e){
+        e.preventDefault();
+        $('.sitter-tabs').removeClass('active');
+        $(this).addClass('active').siblings().removeClass('active');
+
+    })
+    
 })
