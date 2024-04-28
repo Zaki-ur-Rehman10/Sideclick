@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/rehan.css" rel="stylesheet">
@@ -58,17 +59,81 @@
             </div>
         </div>
     </header>
-    <section class="pet-skip-calender">
-        <div class="container">
-            <h2>Select Dates</h2>
-            <div class="calender-column">
-                <button id="clearButton">Clear all</button>
-                <div id="calendar"></div>
-                <div id="selectedCount"></div>
+    <section class="book-sitter">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="profile-book-section">
+                    <div class="card-shadow review-card">
+                        <div class="review-card-top">
+                            <img src="images/r1.png" alt="">
+                            <div>
+                                <h3>Shafic</h3>
+                                <span>Badarvas, 1.5km away</span>
+                            </div>
+                        </div>
+                        <div class="review-card-bottom">
+                            <div class="r-bottom-left">
+                                <img src="images/reviews.png" alt="">
+                                <p>(30)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="calender-btns">
-                <a href="pickservise.html" class="skip-btn">Clear</a>
-                <a href="needswalk.html" class="btn btn-primary">Save</a>
+            <div class="col-lg-9">
+                <div class="booksitter-data">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="booksitter-calender">
+                                <h3>Select Date</h3>
+                                <div class="calender-column">
+                                    <button id="clearButton">Clear all</button>
+                                    <div id="calendar"></div>
+                                    <div id="selectedCount"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="booksitter-dates">
+                                <h3>Time</h3>
+                                <div class="booksiter-date-input card-shadow">
+                                    <select class="js-example-basic-single" name="state">
+                                        <option selected>12:30 PM - 01:30 PM</option>
+                                        <option value="1">06:00 AM - 09:00 AM</option>
+                                        <option value="2">09:00 AM - 10:00 AM</option>
+                                        <option value="3">10:00 AM - 11:00 AM</option>
+                                        <option value="4">11:00 AM - 12:00 PM</option>
+                                        <option value="5">01:00 PM - 02:00 PM</option>
+                                     </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="frequency-data">
+                                <div class="freq-info">
+                                    <p>Frequency</p>
+                                    <p>How many walks per day?</p>
+                                </div>
+                                <div class="frequency-counter">
+                                    <span class="plus"><img src="images/cplus.png" alt=""></span>
+                                    <span class="count-number">1</span>
+                                    <span class="minus"><img src="images/cminus.png" alt=""></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="walks-count">
+                                <div>
+                                    <h4>$8/30 min walk</h4>
+                                    <p>4 walks in cart</p>
+                                </div>
+                                <a href="booking-review.html" class="btn btn-primary">Next</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -129,8 +194,8 @@
             </div>
         </div>
     </footer>
-    
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/scripts.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
@@ -191,6 +256,5 @@
           }
         });
       </script>
-    
   </body>
 </html>

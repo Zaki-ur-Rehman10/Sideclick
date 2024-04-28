@@ -8,7 +8,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/rSlider.min.css">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/rehan.css" rel="stylesheet">
   </head>
@@ -58,149 +57,106 @@
             </div>
         </div>
     </header>
-    <section class="filter-banner">
+    <section class="sitter-apply-box">
         <div class="container">
-            <div class="filter-search-input">
-                <img src="images/cat-foot.png" alt="">
-                <input type="search" class="form-control" placeholder="Find sitter by name">
+            <div class="sitter-top-check">
+                <div class="sitter-check-item active ">
+                    <span></span>
+                    <p>Services</p>
+                </div>
+                <div class="sitter-check-item  ac-border">
+                    <span></span>
+                    <p>Fees</p>
+                </div>
+                <div class="sitter-check-item ">
+                    <span></span>
+                    <p>Bio</p>
+                </div>
+                <div class="sitter-check-item ">
+                    <span></span>
+                    <p>Skills</p>
+                </div>
+                <div class="sitter-check-item ">
+                    <span></span>
+                    <p>Locations</p>
+                </div>
+                <div class="sitter-check-item ">
+                    <span></span>
+                    <p>Pics</p>
+                </div>
             </div>
-        </div>
-    </section>
-    <section class="filter-fields-section">
-        <div class="container">
-            <div class="filter-fields-container">
-                <h3>Search Filter</h3>
-                <div class="filter-fields-box">
-                    <label for="Results">Results Near</label>
-                    <div class="filter-search-input2">
-                        <img src="images/cat-foot.png" alt="">
-                        <input type="text" class="form-control" placeholder="Your current location" id="Results">
-                    </div>
-                    <label for="Dates">Select Dates</label>
-                    <input type="date" id="Dates" placeholder="No date set" class="form-control ">
-                    <label for="Select">Select Service</label>
-                    <select name="" id="Select" class="form-control">
-                        <option value="1">Select option</option>
-                        <option value="2">Select option 1</option>
-                        <option value="3">Select option 2</option>
-                    </select>
-
-                </div>
-                <div class="dog-sizes">
-                    <p>Sitter accepts following dog sizes</p>
-                    <div class="dog-size-boxes">
-                        <div class="dig-size-item">
-                            <img src="images/d1.png" alt="">
-                            <p>Small (0-7 kg)</p>
-                        </div>
-                        <div class="dig-size-item">
-                            <img src="images/d2.png" alt="">
-                            <p>Medium (8-18 kg)</p>
-                        </div>
-                        <div class="dig-size-item">
-                            <img src="images/d3.png" alt="">
-                            <p>Large (19-45 kg)</p>
-                        </div>
-                        <div class="dig-size-item">
-                            <img src="images/d4.png" alt="">
-                            <p>Giant (45+ kg)</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="rnge-slider">
-                    <div class="price-range">
-                        <p>Price range</p>
-                        <input type="text" id="sampleSlider" />
-                    </div>
-                    <div class="radius-range">
-                        <p>Search by radius</p>
-                        <input type="text" id="sampleSlider2" />
-                    </div>
-                </div>
-                <div class="skills">
-                    <p>Amenities & Skills
-                        <div class="skills-info">
-                            <div class="row">
-                                <div class="col-lg-4 col-md-6">
-                                    <div class="skills-item">
-                                        <img src="images/a1.png" alt="">
-                                        <span>knows first aid/ CPR</span>
+            <div class="sitter-apply-info">
+                <h3>How much would you charge for your services?</h3>
+                <div class="service-boxes wide-service-boxes">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="card-shadow sitter-ser-box">
+                                <div class="service-box-left">
+                                    <img src="images/r1.png" alt="">
+                                    <div>
+                                        <h3>Dog Walking</h3>
+                                        <p>Your dog goes on a 30 mins walk</p>
                                     </div>
                                 </div>
-                                <div class="col-lg-4 col-md-6">
-                                    <div class="skills-item">
-                                        <img src="images/a12.png" alt="">
-                                        <span>House</span>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6">
-                                    <div class="skills-item">
-                                        <img src="images/a11.png" alt="">
-                                        <span>Apartment</span>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6">
-                                    <div class="skills-item">
-                                        <img src="images/a10.png" alt="">
-                                        <span>Has one or more dogs</span>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6">
-                                    <div class="skills-item">
-                                        <img src="images/a9.png" alt="">
-                                        <span>Doesn’t have dogs</span>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6">
-                                    <div class="skills-item">
-                                        <img src="images/a8.png" alt="">
-                                        <span>has one or more cats</span>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6">
-                                    <div class="skills-item">
-                                        <img src="images/a7.png" alt="">
-                                        <span>Doesn’t have cats</span>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6">
-                                    <div class="skills-item">
-                                        <img src="images/a6.png" alt="">
-                                        <span>Smocking</span>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6">
-                                    <div class="skills-item">
-                                        <img src="images/a5.png" alt="">
-                                        <span>Non-smocking</span>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6">
-                                    <div class="skills-item">
-                                        <img src="images/a4.png" alt="">
-                                        <span>Can pick up pets</span>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6">
-                                    <div class="skills-item">
-                                        <img src="images/a3.png" alt="">
-                                        <span>Accepts long stays</span>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6">
-                                    <div class="skills-item">
-                                        <img src="images/a2.png" alt="">
-                                        <span>Has children (16-12 yrs old)</span>
-                                    </div>
+                                <div class="service-box-right">
+                                    <p>USD</p>
+                                    <span>20</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="app-filter-btns">
-                            <a href="#" class="btn skip-btn">Clear all</a>
-                            <a href="#" class="btn btn-primary">Apply filters</a>
+                        <div class="col-lg-6">
+                            <div class="card-shadow sitter-ser-box">
+                                <div class="service-box-left">
+                                    <img src="images/r1.png" alt="">
+                                    <div>
+                                        <h3>Dog Walking</h3>
+                                        <p>Your dog goes on a 30 mins walk</p>
+                                    </div>
+                                </div>
+                                <div class="service-box-right">
+                                    <p>USD</p>
+                                    <span>20</span>
+                                </div>
+                            </div>
                         </div>
-                    </p>
+                        <div class="col-lg-6">
+                            <div class="card-shadow sitter-ser-box">
+                                <div class="service-box-left">
+                                    <img src="images/r1.png" alt="">
+                                    <div>
+                                        <h3>Dog Walking</h3>
+                                        <p>Your dog goes on a 30 mins walk</p>
+                                    </div>
+                                </div>
+                                <div class="service-box-right">
+                                    <p>USD</p>
+                                    <span>20</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="card-shadow sitter-ser-box">
+                                <div class="service-box-left">
+                                    <img src="images/r1.png" alt="">
+                                    <div>
+                                        <h3>Dog Walking</h3>
+                                        <p>Your dog goes on a 30 mins walk</p>
+                                    </div>
+                                </div>
+                                <div class="service-box-right">
+                                    <p>USD</p>
+                                    <span>20</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                
+                
+            </div>
+            <div class="servics-btns">
+                <a href="become-sitter-1.html" class="btn btn-secondary">Previous</a>
+                <a href="become-sitter-3.html" class="btn btn-primary">Next</a>
             </div>
         </div>
     </section>
@@ -261,35 +217,9 @@
             </div>
         </div>
     </footer>
+    
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/rSlider.min.js"></script>
     <script src="js/scripts.js"></script>
-    <script>
-   var slider3 = new rSlider({
-        target: '#sampleSlider',
-        values: {min: 0, max: 50},
-        step: 5,
-        range: true,
-        set: [0, 50],
-        scale: false,
-        labels: false,
-        onChange: function (vals) {
-            console.log(vals);
-        }
-    });
-    var slider2 = new rSlider({
-        target: '#sampleSlider2',
-        values: {min: 2, max: 19},
-        step: 5,
-        range: true,
-        set: [0, 50],
-        scale: false,
-        labels: false,
-        onChange: function (vals) {
-            console.log(vals);
-        }
-    });
-    </script>
   </body>
 </html>

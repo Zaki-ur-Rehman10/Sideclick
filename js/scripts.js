@@ -1,5 +1,8 @@
 var $ = jQuery;
 $(document).ready(function(){
+   
+    $('.js-example-basic-single').select2();
+
     $('#toggle-cat-dog').find('input[type="radio"]').change(function(){
         var $this = $(this);
         if($this.val() == 'cat'){
@@ -18,7 +21,7 @@ $(document).ready(function(){
         $('#the-main-menu').slideToggle()
         $(this).toggleClass('active');
         return false;
-    })
+    });
     $('body').on('click', ".dash-menu-item" , function(e){
         e.preventDefault();
         var id 	=	$(this).data('tab');
@@ -26,18 +29,23 @@ $(document).ready(function(){
         $('.tab[data-tab='+id+']').addClass('active').siblings().removeClass('active');
         $(this).addClass('active').siblings().removeClass('active');
 
-    })
+    });
     $('body').on('click', ".list-filter" , function(e){
         e.preventDefault();
         $('.sitter-tabs').addClass('active');
         $(this).addClass('active').siblings().removeClass('active');
 
-    })
+    });
     $('body').on('click', ".tab-filter" , function(e){
         e.preventDefault();
         $('.sitter-tabs').removeClass('active');
         $(this).addClass('active').siblings().removeClass('active');
 
+    });
+    $('body').on('click', ".sitter-profile-btns > a" , function(){
+        $(this).addClass('active').siblings().removeClass('active');
+
     })
+    
     
 })

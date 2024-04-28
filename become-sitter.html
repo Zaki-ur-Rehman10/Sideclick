@@ -8,7 +8,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/rehan.css" rel="stylesheet">
   </head>
@@ -58,17 +57,48 @@
             </div>
         </div>
     </header>
-    <section class="pet-skip-calender">
-        <div class="container">
-            <h2>Select Dates</h2>
-            <div class="calender-column">
-                <button id="clearButton">Clear all</button>
-                <div id="calendar"></div>
-                <div id="selectedCount"></div>
+    <section class="become-sitter-page">
+        <div class="become-sitter-banner">
+            <div class="container">
+                <div class="become-sitter-banner-info">
+                    <h2>WOULD YOU LIKE TO JOIN SIDELICK'S  NETWORK OF PET SITTERS AND  DOG WALKERS?</h2>
+                    <p>If you love pets and they love you back, we love you too!  <br>
+                        If you’re fluent in Woof or Meow, we’ve got the right pet sitting missions for you. <br>
+                        Join our pack and share fun times with pets by assisting other pet parents around you
+                        </p>
+                        <a href="become-sitter-1.html" class="btn btn-primary">Apply Now</a>
+                </div>
             </div>
-            <div class="calender-btns">
-                <a href="pickservise.html" class="skip-btn">Clear</a>
-                <a href="needswalk.html" class="btn btn-primary">Save</a>
+        </div>
+        <div class="become-sitter-body">
+            <div class="container">
+                <div class="become-sitter-body-data">
+                    <div class="sitter-step-info">
+                        <h4>4 Steps Registration</h4>
+                        <h3>Create your profile</h3>
+                        <p>Show us the pet lover you are, upload pictures of you and you pets and verify your profile.</p>
+                        <h3>Wait for our review</h3>
+                        <p>Sidelick handlers will assess you profile and hopefully approve it as soon as possible</p>
+                        <h3>Offer pet services</h3>
+                        <p>Show us the pet lover you are, upload pictures of you and you pets and verify your profile.</p>
+                        <h3>Earn & enjoy</h3>
+                        <p>Earn money by combining work with pleasure and assisting pet parents in your community</p>
+                    </div>
+                    <div class="sitter-mob">
+                        <img src="images/sitter-phone.png" alt="">
+                    </div>
+                    <div class="sitter-step-info">
+                        <h4>Sidelick support & flexbility</h4>
+                        <h3>Set your schedule & fees</h3>
+                        <p>You decide the services you offer, your schedule and your fees.</p>
+                        <h3>Secure payment & insurance</h3>
+                        <p>Clients pay securely online and the fees automatically cover pet insurance during the mission.</p>
+                        <h3>Access to 24/7 support</h3>
+                        <p>You’ll have access to 24/7 support and veterinary assistance.</p>
+                        <h3>Get featured</h3>
+                        <p>Become a star pet lover by having lots of repeat customers and get extra cash bonuses.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -133,64 +163,5 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/scripts.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
-    <script>
-        $(function() {
-          $("#calendar").datepicker({
-            onSelect: function(dateText, inst) {
-              var selectedDate = new Date(dateText);
-              var dateString = $.datepicker.formatDate('yy-mm-dd', selectedDate);
-              var index = selectedDates.indexOf(dateString);
-              if (index === -1) {
-                selectedDates.push(dateString);
-                $(this).find('td.ui-datepicker-current-day').addClass('selected');
-              } else {
-                selectedDates.splice(index, 1);
-                $(this).find('td.ui-datepicker-current-day').removeClass('selected');
-              }
-              updateSelectedCount();
-            },
-            beforeShowDay: function(date) {
-              var dateString = $.datepicker.formatDate('yy-mm-dd', date);
-              if ($.inArray(dateString, selectedDates) != -1) {
-                return [true, "selected"];
-              }
-              return [true, ""];
-            }
-          });
-      
-          var selectedDates = [];
-      
-          $(document).on('dblclick', '#calendar .ui-datepicker-calendar tbody td', function() {
-            var date = $(this).text();
-            var month = $("#calendar .ui-datepicker-month").val();
-            var year = $("#calendar .ui-datepicker-year").val();
-            var dateString = year + '-' + (parseInt(month) + 1) + '-' + date;
-            if (!$(this).hasClass('ui-datepicker-unselectable')) {
-              var index = selectedDates.indexOf(dateString);
-              if (index === -1) {
-                selectedDates.push(dateString);
-                $(this).addClass('selected');
-              } else {
-                selectedDates.splice(index, 1);
-                $(this).removeClass('selected');
-              }
-              updateSelectedCount();
-            }
-          });
-      
-          $(document).on('click', '#clearButton', function() {
-            $("#calendar .selected").removeClass('selected');
-            selectedDates = [];
-            updateSelectedCount();
-          });
-      
-          function updateSelectedCount() {
-            var count = selectedDates.length;
-            $("#selectedCount").text(count + " Day selected");
-          }
-        });
-      </script>
-    
   </body>
 </html>

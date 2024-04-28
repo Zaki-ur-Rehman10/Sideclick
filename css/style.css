@@ -1947,6 +1947,9 @@ span.card-status {
     cursor: pointer;
     margin: 0px !important;
 }
+.nottification-item input:checked{
+    background-color: var(--primary) !important;
+}
 .nottification-item  .form-check-input:focus{
     box-shadow: none !important;
 }
@@ -1960,14 +1963,13 @@ span.card-status {
     left: 3px;
     top: 2px;
     transition: all 0.5s;
-    opacity: 0.5;
 }
 .nottification-item input:checked:before {
     right: 3px !important;
     transition: all 0.5s;
-    background: var(--primary);
-    left:unset;
-    opacity:1;
+    background: var(--white);
+    left: unset;
+    opacity: 1;
 }
 .dashboard-content-section:has(.wallet-transaction) {
     margin-top: 0px;
@@ -2691,14 +2693,14 @@ section.pet-skip-calender h2 {
         justify-content: center;
     }
 }
-.skip-btn:hover {
-    background: rgba(161, 161, 161, 1);
-    color: #fff;
-    transition: all 0.3s;
-}
 .skip-btn {
     color: rgba(161, 161, 161, 1);
     border: 2px solid rgba(161, 161, 161, 1);
+    transition: all 0.3s;
+}
+.skip-btn:hover {
+    background: rgba(161, 161, 161, 1);
+    color: #fff !important;
     transition: all 0.3s;
 }
 .walk-btns {
@@ -3019,6 +3021,8 @@ input#Dates {
 }
 .rs-scale {
     top: 31px !important;
+    display: flex !important;
+    justify-content: space-between !important;
 }
 .rs-scale span ins {
     font-family: 'Raleway';
@@ -3084,7 +3088,1246 @@ input#Dates {
     left: 31px;
     top: 1px;
 }
+.skills-item {
+    border: 1px solid rgba(18, 17, 11, 1);
+    border-radius: 10px;
+    height: 134px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 41px;
+}
+.skills p {
+    font-family: 'Raleway';
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28.18px;
+    text-align: left;
+    margin-bottom: 30px;
+}
+.skills-item span {
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 18.78px;
+    text-align: center;
+    margin-top: -21px;
+}
+.skills-item img {
+    margin-top: -41px;
+}
+.app-filter-btns .btn {
+    font-family: 'Lato';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 18px;
+    text-align: center;
+    border-radius: 15px;
+    padding: 24px 0px;
+    width: 49%;
+}
+.app-filter-btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.sitter-profile-box {
+    margin-top: 56px;
+}
+.profile-book-section .review-card-top img {
+    height: 126px;
+    width: 126px;
+    border-radius: 50px;
+}
+.profile-book-section .review-card-top span {
+    font-size: 18px !important;
+}
+.profile-book-section .review-card-top h3 {
+    margin-top: 11px;
+    font-size: 26px !important;
+    margin-bottom: 9px;
+}
+.profile-book-section .review-card-bottom {
+    justify-content: center;
+    margin-top: 20px;
+}
+.profile-book-section {
+    padding: 0px 3px 0px 16px;
+}
+.profile-book-section .review-card {
+    min-height: 295px;
+    margin-top: 4px;
+}
+.profile-book-section .review-card-top {
+    padding: 23px 39px 0px 33px;
+}
+.profile-book-btns {
+    margin-top: 41px;
+}
+.profile-book-btns .btn {
+    font-family: 'Lato';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 18px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    padding: 8px;
+    margin-bottom: 16px;
+}
+.sitter-profile-btns {
+    border-bottom: 7px solid rgba(245, 238, 238, 1);
+    margin-top: 53px;
+    padding-bottom: 13px;
+}
+.sitter-profile-btns a {
+    font-family: 'Lato';
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.6px;
+    text-align: left;
+    text-decoration: none;
+    color: var(--black);
+    padding: 0px 59px 15px 59px;
+    text-transform: uppercase;
+    border-bottom: 7px solid transparent;
+}
+.sitter-profile-btns a.active{
+    color: var(--primary);
+    border-color: var(--primary);
+}
+.sitter-profile-info {
+    padding: 0px 29px;
+}
+div#about > p {
+    font-family: 'Lato';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    margin-top: 32px;
+    text-transform: capitalize;
+    color: rgba(0, 0, 0, 0.7);
 
+}
+div#about h3 {
+    font-family: 'Lato';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+    text-align: left;
+    text-transform: capitalize;
+}
+.location > h3 {
+    margin-bottom: 10px;
+}
+.location > p {
+    font-family: 'Lato';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    margin-bottom: 31px;
+}
+.location {
+    margin-top: 53px;
+    margin-bottom: 57px;
+}
+.experience-boxes {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 29px;
+}
+.experience-item img {
+    margin-right: 15px;
+}
+
+.experience-item p {
+    font-family: 'Lato';
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+    color: var(--primary);
+    margin-bottom: 0px;
+}
+.experience-item h4 {
+    font-family: 'Lato';
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 26.4px;
+    text-align: left;
+    margin-bottom: 0px;
+}
+.experience-item {
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+    min-width: 216px;
+    min-height: 85px;
+    border-radius: 15px;
+    margin: 0px 9px 9px 0px;
+    padding: 0px 10px;
+}
+.experience {
+    margin-bottom: 47px;
+}
+.service-fee > h3 {
+    margin-bottom: 29px;
+}
+.ser-fee-item img {
+    height: 65px;
+    width: 65px;
+    border-radius: 50px;
+    margin-right: 16px;
+}
+.ser-fee-item p {
+    font-family: 'Lato';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.8px;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 0px;
+}
+.ser-fee-left h5 {
+    color: var(--primary);
+}
+.ser-fee-item h5 {
+    font-family: 'Lato';
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    margin-bottom: 0px;
+    text-transform: capitalize;
+}
+.ser-fee-left {
+    display: flex;
+    align-items: center;
+    margin-right: 4px;
+}
+.ser-fee-item {
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+    min-height: 85px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 9px;
+    padding: 6px 6px 6px 9px;
+}
+div#skill-amenities h3 {
+    font-family: 'Lato';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+    text-align: left;
+    text-transform: capitalize;
+}
+div#skill-amenities {
+    margin-top: 48px;
+}
+.s-amenities-item p {
+    font-family: 'Raleway';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 18.78px;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.7);
+    margin-bottom: 0px;
+}
+.s-amenities-item img {
+    max-height: 30px;
+    max-width: 30px;
+    object-fit: cover;
+    margin-right: 9px;
+}
+.s-amenities-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.amenities-boxes > h3{
+    margin-bottom: 19px;
+}
+.s-dog-sizes .dig-size-item img {
+    max-height: 130px;
+    max-width: 130px;
+}
+.s-dog-sizes .dog-size-boxes {
+    justify-content: flex-start;
+}
+.s-dog-sizes .dog-size-boxes {
+    margin-top: 35px;
+}
+.s-dog-sizes .dog-size-boxes {
+    margin-top: 29px;
+}
+.s-dog-sizes .dog-size-boxes .dig-size-item:hover p {
+    color: var(--primary);
+}
+.s-dog-sizes .dog-size-boxes .dig-size-item:hover img {
+    border-color: var(--primary);
+}
+.s-dog-sizes .dog-size-boxes .dig-size-item {
+    margin-right: 22px;
+    cursor: pointer;
+}
+.s-dog-sizes .dig-size-item img {
+    max-height: 130px;
+    max-width: 130px;
+    border: 3px solid transparent;
+    border-radius: 15px;
+    margin-bottom: 5px;
+}
+.s-dog-sizes {
+    margin-top: 47px;
+}
+.person-pets {
+    margin-top: 41px;
+}
+.p-pet-items h4 {
+    font-family: 'Lato';
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 31.2px;
+    text-align: center;
+}
+.p-pet-items {
+    text-align: center;
+    margin-right: 39px;
+}
+.p-pet-items img {
+    height: 104px;
+    width: 104px;
+    border-radius: 50px;
+    margin-bottom: 11px;
+}
+.per-pet-boxes {
+    display: flex;
+    align-items: center;
+    margin-top: 33px;
+    flex-wrap: wrap;
+}
+.avaibility-calender {
+    margin-top: 50px;
+}
+.avaibility-calender .calender-column .ui-datepicker-header {
+    max-width: 331px;
+}
+.avaibility-calender .calender-column div#selectedCount {
+    position: absolute;
+    right: 36px;
+    top: 15px;
+}
+.avaibility-calender .calender-column {
+    margin-top: 40px;
+    max-width: 100%;
+}
+.availabily-status span {
+    background: var(--Primary, rgba(232, 85, 88, 1));
+    height: 28px;
+    width: 28px;
+    border-radius: 50px;
+    margin-right: 20px;
+}
+.availabily-status p {
+    font-family: 'Lato';
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 26.4px;
+    text-align: left;
+    margin-bottom: 0px;
+}
+.availabily-status {
+    margin-top: 48px;
+    display: flex;
+    align-items: center;
+}
+div#gallery {
+    margin-top: 56px;
+}
+div#gallery > h3 {
+    font-family: 'Lato';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+    text-align: left;
+    margin-bottom: 21px;
+}
+.gallery-image img{
+    width: 100%;
+    border-radius: 25px;
+    object-fit: cover;
+}
+.big-img img{
+    height: 424px;
+}
+.gallery-image {
+    margin-bottom: 24px;
+}
+.sml-img img {
+    height: 200px;
+}
+.galler-container {
+    margin-bottom: -6px;
+}
+div#gallery .galler-container:nth-child(odd) .row {
+    flex-direction: row-reverse;
+}
+div#reviews {
+    margin-top: 37px;
+    margin-bottom: 40px;
+}
+div#reviews > h3 {
+    font-family: 'Lato';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+    text-align: left;
+    margin-bottom: 25px;
+}
+section.book-sitter {
+    padding: 57px 39px;
+}
+.booksitter-data {
+    padding: 12px 16px;
+}
+.booksitter-calender h3 {
+    font-family: 'Lato';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+    text-align: left;
+    color: var(--primary);
+    margin-left: 10px;
+}
+.booksitter-dates h3 {
+    font-family: 'Lato';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+    text-align: left;
+    color: var(--primary);
+    margin-left: 10px;
+}
+.booksitter-calender .calender-column {
+    margin-top: 27px;
+    max-width: 100%;
+    min-height: 420px;
+}
+.booksiter-date-input {
+    padding: 27px 29px;
+    margin-top: 27px;
+    min-height: 420px;
+}
+.booksiter-date-input span.select2.select2-container.select2-container--default > span > span {
+    border-radius: 10px;
+    border: 1px solid rgba(87, 86, 86, 1);
+    min-height: 65px;
+    padding: 30px 10px 10px 63px;
+}
+.booksiter-date-input span.select2.select2-container.select2-container--default > span > span > span {
+    font-family: 'Raleway';
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.13px;
+    text-align: left;
+    text-transform: lowercase;
+}
+.booksiter-date-input span.select2.select2-container.select2-container--default {
+    width: 100% !important;
+}
+span.select2-dropdown {
+    margin-top: 15px;
+    border-radius: 10px !important;
+    border: 1px solid rgba(87, 86, 86, 1);
+}
+input.select2-search__field {
+    display: none;
+}
+span.select2-dropdown {
+    margin-top: 15px;
+    border-radius: 10px !important;
+    border: 1px solid rgba(87, 86, 86, 1) !important;
+}
+.booksiter-date-input .select2{
+    position: relative;
+}
+.booksiter-date-input .select2:after {
+    content: "";
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-image: url(../images/time.png);
+    top: 12px;
+    left: 20px;
+    background-repeat: no-repeat;
+}
+.booksiter-date-input .select2:before {
+    content: "Time";
+    position: absolute;
+    top: 14px;
+    left: 71px;
+    font-family: 'Raleway';
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 17.61px;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.5);
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+    border: none;
+    background-image: url(../images/Arrow.png);
+    height: 26px;
+    width: 26px;
+    background-repeat: no-repeat;
+    left: -8px;
+    top: 22px;
+}
+.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
+    transform: rotatex(166deg);
+    top: 18px;
+}
+span.select2-results li:hover {
+    background: rgba(241, 241, 241, 1) !important;
+    color: var(--black) !important;
+}
+span.select2-results li {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22.5px;
+    text-align: left;
+    padding-left: 22px;
+}
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+    background-color: transparent;
+    color: var(--primary);
+}
+.frequency-data p {
+    font-family: 'Lato';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.7);
+}
+.freq-info p:nth-child(1) {
+    color: var(--primary);
+}
+.frequency-data {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.frequency-counter span.plus, span.minus {
+    height: 30px;
+    width: 30px;
+    background: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.frequency-counter span.count-number {
+    font-family: 'Lato';
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 48px;
+    text-align: left;
+}
+.frequency-counter {
+    border: 1px solid var(--primary);
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 124px;
+    border-radius: 10px;
+    justify-content: space-between;
+    padding: 15px 8px;
+}
+.walks-count p {
+    font-family: 'Lato';
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28.8px;
+    text-align: right;
+    color: var(--primary);
+    margin-bottom: 4px;
+}
+.walks-count h4 {
+    font-family: 'Lato';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+    text-align: right;
+    margin-bottom: 4px;
+}
+.walks-count {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+.walks-count .btn {
+    font-family: 'Lato';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 18px;
+    text-align: center;
+    color: var(--white);
+    padding: 10px 59px;
+    min-height: 67px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    margin-left: 28px;
+}
+section.schedule-review {
+    margin-top: 56px;
+}
+section.schedule-review .profile-book-btns {
+    margin-top: 31px;
+}
+section.schedule-review .profile-book-btns .btn {
+    padding: 17px 0px;
+    max-width: 70%;
+    margin: auto;
+}
+.booking-schedule {
+    margin-top: 13px;
+    padding-left: 14px;
+}
+.booking-schedule > h3 {
+    font-family: 'Lato';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+    text-align: left;
+    color: var(--primary);
+}
+.schedule-dates h3 {
+    font-family: 'Lato';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+    text-align: left;
+    color: var(--black);
+}
+.schedule-dates {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 23px;
+}
+.sch-head {
+    min-width: 76px;
+}
+.sch-head h3:nth-child(1) {
+    min-height: 84px;
+    margin-bottom: 18px;
+    align-items: center;
+    display: flex;
+}
+.scedule-group {
+    min-width: 83px;
+    margin-right: 10px;
+}
+.sch-date-item {
+    border: 1px solid var(--primary);
+    min-height: 89px;
+    border-radius: 12px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 13px;
+}
+.sch-date-item p {
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.2px;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 0px;
+}
+.sch-time-item {
+    min-height: 31px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    margin-bottom: 11px;
+}
+.sch-time-item p {
+    font-family: 'Lato';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.7);
+    margin-bottom: 0px;
+}
+.search-field {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--primary);
+    border-radius: 10px;
+    margin-top: 26px;
+    height: 66px;
+    padding: 10px 14px;
+    margin-bottom: 35px;
+}
+.booking-schedule-fields label {
+    font-family: 'Lato';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+    text-align: left;
+    color: var(--primary);
+}
+.booking-schedule-fields {
+    margin-top: 22px;
+    padding-left: 14px;
+}
+.search-field input {
+    border: none;
+    outline: 0;
+    font-family: 'Raleway';
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.13px;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.5);
+}
+.booking-schedule-fields textarea {
+    width: 100%;
+    margin-top: 25px;
+    padding: 17px 32px;
+    min-height: 171px;
+    resize: none;
+    font-family: 'Raleway';
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.13px;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.5);
+    border: 1px solid var(--primary);
+    border-radius: 10px;
+}
+.fee-breakdown {
+    margin-top: 29px;
+    padding-left: 14px;
+    max-width: 535px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 17px;
+}
+.fee-breakdown > h3 {
+    margin-bottom: 25px;
+    font-family: 'Lato';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+    text-align: left;
+    color: var(--primary);
+}
+.fee-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.fee-breakdown p {
+    font-family: 'Lato';
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28.8px;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.7);
+}
+.total-fee p {
+    font-weight: 700;
+    color: var(--black);
+}
+.total-walks p {
+    font-family: 'Lato';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+    text-align: right;
+    margin-bottom: 0px;
+    margin-right: 24px;
+}
+.total-walks .btn {
+    font-family: 'Lato';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 18px;
+    text-align: center;
+    border-radius: 15px;
+    padding: 24px 16px;
+    text-transform: capitalize;
+}
+.total-walks {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 54px;
+    padding-left: 14px;
+    padding-right: 39px;
+    flex-wrap: wrap;
+    margin-bottom: 27px;
+}
+.request-container .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lato';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 18px;
+    text-align: center;
+    max-width: 180px;
+    margin: auto;
+    margin-top: 26px;
+    border-radius: 15px;
+    padding: 23px 0px;
+}
+.request-container img {
+    display: block;
+    margin: auto;
+    margin-bottom: 24px;
+}
+.request-container P {
+    font-family: 'Raleway';
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.7);
+    margin-top: 23px;
+}
+.request-container h3 {
+    font-family: 'Raleway';
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 35.22px;
+    text-align: center;
+    color: var(--primary);
+}
+.request-container {
+    border: 1px solid rgba(232, 85, 88, 1);
+    max-width: 494px;
+    border-radius: 30px;
+    margin: auto;
+    margin-top: 69px;
+    padding: 35px 0px;
+    margin-bottom: 64px;
+}
+.become-sitter-banner-info {
+    padding: 89px 25px;
+}
+.become-sitter-banner-info .btn {
+    font-family: 'Lato';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 18px;
+    text-align: center;
+    padding: 24px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 246px;
+    border-radius: 15px;
+}
+.become-sitter-banner-info p {
+    font-family: 'Lato';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27.6px;
+    margin-bottom: 22px;
+}
+.become-sitter-banner-info h2 {
+    font-family: 'Raleway';
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 45px;
+    text-align: left;
+    margin-bottom: 18px;
+    max-width: 60%;
+}
+.become-sitter-banner {
+    background-image: url(../images/bec-sitter.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.become-sitter-body-data .sitter-step-info:nth-child(1) p {
+    margin-left: auto;
+}
+.sitter-step-info p {
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    color: rgba(85, 85, 85, 1);
+    max-width: 397px;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+.sitter-step-info h3 {
+    font-family: 'Lato';
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: capitalize;
+    margin-bottom: 7px;
+}
+.sitter-step-info h4 {
+    font-family: 'Lato';
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 45px;
+    color: var(--primary);
+    margin-bottom: 33px;
+    text-transform: capitalize;
+}
+.become-sitter-body-data .sitter-step-info:nth-child(1) {
+    text-align: right;
+    padding-right: 28px;
+    padding-left: 0px;
+}
+.sitter-step-info {
+    flex-basis: 38%;
+    margin-top: 71px;
+    padding-left: 29px;
+}
+.become-sitter-body-data {
+    display: flex;
+    margin-top: 114px;
+    margin-bottom: 49px;
+}
+.sitter-mob {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section.sitter-apply-box {
+    margin-top: 107px;
+    margin-bottom: 52px;
+}
+.sitter-top-check {
+    display: flex;
+    align-items: center;
+    max-width: 1147px;
+    margin: auto;
+    flex-wrap: wrap;
+}
+.sitter-check-item.ac-border span {
+    height: 32px;
+    width: 33px;
+    top: -19px;
+}
+.sitter-check-item span {
+    height: 24px;
+    width: 24px;
+    border-radius: 50px;
+    background: #fff;
+    border: 1px solid var(--primary);
+    display: block;
+    position: absolute;
+    top: -14px;
+}
+.sitter-check-item.active span{
+    background: var(--primary);
+}
+.sitter-check-item.ac-border span:before {
+    content: "";
+    position: absolute;
+    background: var(--primary);
+    border-radius: 68px;
+    left: 0;
+    right: 0;
+    margin: 2px;
+    top: 0;
+    bottom: 0;
+}
+.sitter-check-item.ac-border p {
+    color: var(--primary);
+}
+.sitter-check-item p {
+    font-family: 'Lato';
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+}
+.sitter-top-check .sitter-check-item:nth-last-child(1) {
+    border: none;
+    min-width: unset;
+}
+.sitter-check-item {
+    min-width: 222px;
+    border-top: 4px solid var(--primary);
+    position: relative;
+    padding-top: 25px;
+    margin-bottom: 25px;
+}
+.sitter-apply-info {
+    margin-top: 38px;
+    padding: 0px 147px 0px 24px;
+}
+.sitter-apply-info > h3 {
+    font-family: 'Raleway';
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 35.22px;
+    text-align: left;
+    margin-bottom: 45px;
+}
+.sitter-ser-box p {
+    font-family: 'Lato';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.8px;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 0px;
+}
+.sitter-ser-box h3 {
+    font-family: 'Lato';
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+}
+.service-box-left {
+    display: flex;
+    align-items: center;
+}
+.sitter-ser-box img {
+    height: 65px;
+    width: 65px;
+    border-radius: 50px;
+    margin-right: 15px;
+}
+.sitter-ser-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 9px 14px;
+    flex-wrap: wrap;
+    min-height: 85px;
+    margin-bottom: 10px;
+}
+.service-box-notification .form-check {
+    padding: 0px;
+    margin: 10px 0px;
+}
+.service-box-notification {
+    padding: 0px;
+    margin-left: 10px;
+    border: none;
+}
+.sitter-apply-box .btn {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 18px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    padding: 24px 0px;
+    max-width: 180px;
+    margin: auto;
+    margin-top: 60px;
+}
+.sitter-apply-info:has(.wide-service-boxes) {
+    padding: 0px 24px;
+}
+.service-box-right {
+    display: flex;
+    align-items: center;
+    margin: 10px 0px 10px 10px;
+}
+.service-box-right p {
+    font-family: 'Raleway';
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 18px;
+    text-align: left;
+    color: rgba(124, 124, 124, 1);
+}
+.service-box-right span {
+    border: 1px solid rgba(153, 153, 153, 1);
+    border-radius: 10px;
+    min-width: 106px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Raleway';
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 18px;
+    color: rgba(124, 124, 124, 1);
+    margin-left: 10px;
+}
+.servics-btns a.btn {
+    min-width: 180px;
+    margin-left: unset;
+    margin-right: unset;
+}
+.servics-btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0px 24px;
+}
+.sitter-apply-info:has(.service-boxes-fields) {
+    padding: 0px 37px;
+}
+.sitter-apply-info:has(.service-boxes-fields) h3 {
+    margin-bottom: 31px;
+}
+.service-boxes-fields {
+    max-width: 1043px;
+    margin-bottom: 45px;
+}
+.service-boxes-fields label {
+    font-family: 'Raleway';
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28.18px;
+    text-align: left;
+}
+input:focus{
+    box-shadow: none !important; 
+}
+.service-boxes-fields input {
+    border: 1px solid rgba(153, 153, 153, 1);
+    border-radius: 10px;
+    height: 60px;
+    font-family: 'Raleway';
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28.18px;
+    text-align: left;
+    padding: 5px 20px;
+    margin-top: 20px;
+}
+.service-boxes-fields textarea {
+    border: 1px solid rgba(153, 153, 153, 1);
+    border-radius: 10px;
+    height: 60px;
+    font-family: 'Raleway';
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28.18px;
+    text-align: left;
+    padding: 5px 20px;
+    margin-top: 20px;
+    min-height: 134px;
+    resize: none;
+}
+.service-skills {
+    padding: 39px 37px 0px 37px;
+}
+.service-skills p {
+    font-family: 'Raleway';
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28.18px;
+    text-align: left;
+}
+.service-skills h3 {
+    font-family: 'Raleway';
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 35.22px;
+    text-align: left;
+    color: var(--primary);
+    margin-bottom: 15px;
+}
+.service-skill-cards {
+    margin-top: 65px;
+    padding: 0px 37px;
+}
+.service-skill-item.active p {
+    color: var(--primary);
+}
+
+.service-skill-item p {
+    font-family: 'Raleway';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 18.78px;
+    text-align: left;
+}
+.service-skill-item {
+    border: 1px solid rgba(18, 17, 11, 1);
+    height: 134px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.service-skill-item.active {
+    border-color: var(--primary);
+}
+.service-skill-group h6 {
+    font-family: 'Raleway';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.18px;
+    text-align: left;
+    margin-bottom: 36px;
+}
+.service-skill-group {
+    margin-bottom: 56px;
+}
+.service-skill-item img {
+    margin-top: -36px;
+    margin-bottom: -21px;
+}
+.service-skill-cards > .row .col-lg-6:nth-child(2) {
+    padding-left: 25px;
+}
+.service-skill-cards > .row .col-lg-6:nth-child(1) {
+    padding-right: 25px;
+}
+.ser-dog-sizes {
+    margin-top: 3px;
+}
+.ser-dog-sizes h3 {
+    font-family: 'Raleway';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.18px;
+    text-align: left;
+}
+.ser-dog-sizes .dog-size-boxes {
+    justify-content: flex-start;
+}
 
 
 
@@ -3099,6 +4342,46 @@ input#Dates {
     .sitter-list-btns{
         padding: 0px;
     }
+    .sitter-profile-btns a {
+        padding: 0px 30px 15px 30px;
+    }
+    section.book-sitter {
+        padding: 57px 15px;
+    }
+    .profile-book-section{
+        padding-left: 0px;
+    }
+    .booking-schedule{
+        padding-left: 0px;
+    }
+    .booking-schedule-fields{
+        padding-left: 0px;
+    }
+    .fee-breakdown{
+        padding-left: 0px;
+    }
+    .sitter-check-item {
+        min-width: 190px;
+    }
+    .sitter-top-check {
+        max-width: 987px;
+    }
+    .sitter-apply-info{
+        padding: 0px;
+    }
+    .sitter-apply-info:has(.wide-service-boxes) {
+        padding: 0px;
+    }
+    .servics-btns {
+        margin: 0px ;
+    }
+    .service-skills{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .service-skill-cards{
+        padding: 0px;
+    }
 }
 @media(max-width:1200px){
     .sitter-tabs .review-card-bottom {
@@ -3106,6 +4389,12 @@ input#Dates {
     }
     .sitter-tabs .review-card-bottom .r-bottom-left {
         margin-bottom: 5px;
+    }
+    .sitter-check-item {
+        min-width: 140px;
+    }
+    .sitter-top-check {
+        max-width: 737px;
     }
 }
 @media(max-width:991px){
@@ -3117,6 +4406,49 @@ input#Dates {
     }
     .search-feild input{
         min-width: 100%;
+    }
+    .booksitter-dates {
+        margin-top: 30px;
+    }
+    .sitter-step-info p {
+        max-width: unset;
+    }
+    .sitter-step-info {
+        text-align: center !important;
+    }
+    .become-sitter-body-data {
+        display: block;
+        margin-top: 0px;
+    }
+    .service-skill-cards > .row .col-lg-6:nth-child(2) {
+        padding-left: 1.5rem;
+    }
+    .service-skill-cards > .row .col-lg-6:nth-child(1) {
+        padding-right: 1.5rem;
+    }
+}
+@media(max-width:767px){
+    .app-filter-btns {
+        flex-direction: column;
+    }
+    .app-filter-btns .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .dog-size-boxes {
+        justify-content: center;
+    }
+    .sitter-profile-btns a {
+        padding: 0px 30px 6px 30px;
+        margin-bottom: 13px;
+        display: block;
+    }
+    .avaibility-calender .calender-column div#selectedCount {
+        position: relative;
+        left: 0;
+        right: 0;
+        margin-bottom: 23px;
+        margin-top: -15px;
     }
 }
 @media(max-width:500px){

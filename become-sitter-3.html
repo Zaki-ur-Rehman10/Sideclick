@@ -8,7 +8,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/rehan.css" rel="stylesheet">
   </head>
@@ -58,17 +57,93 @@
             </div>
         </div>
     </header>
-    <section class="pet-skip-calender">
+    <section class="sitter-apply-box">
         <div class="container">
-            <h2>Select Dates</h2>
-            <div class="calender-column">
-                <button id="clearButton">Clear all</button>
-                <div id="calendar"></div>
-                <div id="selectedCount"></div>
+            <div class="sitter-top-check">
+                <div class="sitter-check-item active ">
+                    <span></span>
+                    <p>Services</p>
+                </div>
+                <div class="sitter-check-item active ">
+                    <span></span>
+                    <p>Fees</p>
+                </div>
+                <div class="sitter-check-item ac-border">
+                    <span></span>
+                    <p>Bio</p>
+                </div>
+                <div class="sitter-check-item ">
+                    <span></span>
+                    <p>Skills</p>
+                </div>
+                <div class="sitter-check-item ">
+                    <span></span>
+                    <p>Locations</p>
+                </div>
+                <div class="sitter-check-item ">
+                    <span></span>
+                    <p>Pics</p>
+                </div>
             </div>
-            <div class="calender-btns">
-                <a href="pickservise.html" class="skip-btn">Clear</a>
-                <a href="needswalk.html" class="btn btn-primary">Save</a>
+            <div class="sitter-apply-info">
+                <h3>Tell us about your pet experience</h3>
+                <div class="service-boxes-fields">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="service-field-item">
+                                <label for="dogs">Experience with dogs (years):</label>
+                                <input type="text" class="form-control" placeholder="Ex. 5" id="dogs">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="service-field-item">
+                                <label for="dogs">Experience with dogs (years):</label>
+                                <input type="text" class="form-control" placeholder="Ex. 5" id="dogs">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h3>Write a bio about your skills (450 characters min.)</h3>
+                <div class="service-boxes-fields service-textarea">
+                    <label for="Bio">Bio</label>
+                    <textarea name="" id="Bio" class="form-control">Enter Bio here..</textarea>
+                </div>
+                <h3>Whats your pet motto? (35 characters max.)</h3>
+                <div class="service-boxes-fields">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="service-field-item">
+                                <input type="text" class="form-control" placeholder="Enter pet motto" >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h3>Who can we contact, other than you, in case of an emergancy?</h3>
+                <div class="service-boxes-fields">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="service-field-item">
+                                <input type="text" class="form-control" placeholder="Enter full Name">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h3>Whats your emergancy contact’s phone number?</h3>
+                <div class="service-boxes-fields">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="service-field-item">
+                                <input type="text" class="form-control" placeholder="+961 123 456 789">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+            <div class="servics-btns">
+                <a href="become-sitter-2.html" class="btn btn-secondary">Previous</a>
+                <a href="become-sitter-4.html" class="btn btn-primary">Next</a>
             </div>
         </div>
     </section>
@@ -133,64 +208,5 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/scripts.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
-    <script>
-        $(function() {
-          $("#calendar").datepicker({
-            onSelect: function(dateText, inst) {
-              var selectedDate = new Date(dateText);
-              var dateString = $.datepicker.formatDate('yy-mm-dd', selectedDate);
-              var index = selectedDates.indexOf(dateString);
-              if (index === -1) {
-                selectedDates.push(dateString);
-                $(this).find('td.ui-datepicker-current-day').addClass('selected');
-              } else {
-                selectedDates.splice(index, 1);
-                $(this).find('td.ui-datepicker-current-day').removeClass('selected');
-              }
-              updateSelectedCount();
-            },
-            beforeShowDay: function(date) {
-              var dateString = $.datepicker.formatDate('yy-mm-dd', date);
-              if ($.inArray(dateString, selectedDates) != -1) {
-                return [true, "selected"];
-              }
-              return [true, ""];
-            }
-          });
-      
-          var selectedDates = [];
-      
-          $(document).on('dblclick', '#calendar .ui-datepicker-calendar tbody td', function() {
-            var date = $(this).text();
-            var month = $("#calendar .ui-datepicker-month").val();
-            var year = $("#calendar .ui-datepicker-year").val();
-            var dateString = year + '-' + (parseInt(month) + 1) + '-' + date;
-            if (!$(this).hasClass('ui-datepicker-unselectable')) {
-              var index = selectedDates.indexOf(dateString);
-              if (index === -1) {
-                selectedDates.push(dateString);
-                $(this).addClass('selected');
-              } else {
-                selectedDates.splice(index, 1);
-                $(this).removeClass('selected');
-              }
-              updateSelectedCount();
-            }
-          });
-      
-          $(document).on('click', '#clearButton', function() {
-            $("#calendar .selected").removeClass('selected');
-            selectedDates = [];
-            updateSelectedCount();
-          });
-      
-          function updateSelectedCount() {
-            var count = selectedDates.length;
-            $("#selectedCount").text(count + " Day selected");
-          }
-        });
-      </script>
-    
   </body>
 </html>
