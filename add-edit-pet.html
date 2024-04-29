@@ -57,51 +57,121 @@
             </div>
         </div>
     </header>
-    <section class="sitter-apply-box">
+    <section class="edit-pet-head">
         <div class="container">
-            <div class="sitter-top-check">
-                <div class="sitter-check-item active ">
-                    <span></span>
-                    <p>Services</p>
+           <div class="edit-head-data">
+                <h4>I have a : </h4>
+                <div class="h-head-item">
+                    <img src="images/dog-e.png" alt="">
+                    <a href="#" class="btn btn-primary">Dog</a>
                 </div>
-                <div class="sitter-check-item active ">
-                    <span></span>
-                    <p>Fees</p>
+                <div class="h-head-item">
+                    <img src="images/cat-e.png" alt="">
+                    <a href="#" class="btn btn-secondary">Cat</a>
                 </div>
-                <div class="sitter-check-item active">
-                    <span></span>
-                    <p>Bio</p>
-                </div>
-                <div class="sitter-check-item active">
-                    <span></span>
-                    <p>Skills</p>
-                </div>
-                <div class="sitter-check-item ac-border">
-                    <span></span>
-                    <p>Locations</p>
-                </div>
-                <div class="sitter-check-item ">
-                    <span></span>
-                    <p>Pics</p>
-                </div>
-            </div>
-        </div> 
-        <div class="container">   
-            <div class="service-location">
-                <h3>Pin your location</h3>
-                <div class="location-pick-field">
-                    <img src="images/cat-foot.png" alt="">
-                    <input type="text" class="form-control" placeholder="101, Janki nagar, idore division, 452001 MP, India">
-                </div>
-            </div>
-        </div>    
-        <div class="sitter-location-img">
-            <img src="images/map3.png" alt="">
+           </div>
         </div>
-        <div class="container"></div>    
-            <div class="servics-btns">
-                <a href="become-sitter-4.html" class="btn btn-secondary">Previous</a>
-                <a href="become-sitter-6.html" class="btn btn-primary">Next</a>
+    </section>
+    <section class="edit-pet-body">
+        <div class="container">
+            <div class="edit-pet-body-data">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="pet-placeholder-image">
+                            <img src="images/pet-placeholder.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-9">
+                        <div class="edit-pet-options">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="edit-field-item">
+                                        <label for="Name">Name</label>
+                                        <input type="text" class="form-control" placeholder="Enter pet name" id="Name">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="edit-field-item">
+                                        <label for="Birthday">Birthday</label>
+                                        <input type="date" class="form-control" placeholder="Enter pet name" id="Birthday">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="edit-field-item">
+                                        <label for="Gender">Gender</label>
+                                        <img src="images/f1.png" alt="">
+                                        <select name="" id="Gender" class="form-select">
+                                            <option value="1">Select</option>
+                                            <option value="2">option 1</option>
+                                            <option value="3">option 2</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="edit-field-item">
+                                        <label for="Size">Size</label>
+                                        <img src="images/f2.png" alt="">
+                                        <select name="" id="Size" class="form-select">
+                                            <option value="1">Select</option>
+                                            <option value="2">option 1</option>
+                                            <option value="3">option 2</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="edit-field-item">
+                                        <label for="Neutered">Neutered</label>
+                                        <img src="images/f3.png" alt="">
+                                        <select name="" id="Neutered" class="form-select">
+                                            <option value="1">Select</option>
+                                            <option value="2">option 1</option>
+                                            <option value="3">option 2</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="edit-field-item">
+                                        <label for="Potty">Potty trained</label>
+                                        <img src="images/f4.png" alt="">
+                                        <select name="" id="Potty" class="form-select">
+                                            <option value="1">Select</option>
+                                            <option value="2">option 1</option>
+                                            <option value="3">option 2</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="edit-field-item" class="form-control">
+                                        <label for="Type">Type</label>
+                                        <img src="images/f5.png" alt="">
+                                        <input type="text" id="Type" placeholder="Dog" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="edit-field-textarea">
+                                <label for="bio">Short bio</label>
+                                <textarea id="bio" class="form-control"></textarea>
+                            </div>
+                            <div class="gall-upload">
+                                <h3>Upload pictures of vaccination record</h3>
+                                <div class="cards-data">
+                                    <div class="add-pet card-shadow up-gallery-item">
+                                        <a href="#" class="add-btn"><img src="images/add2.png" alt=""></a>
+                                    </div>
+                                    <div class="up-gallery-item">
+                                        <img src="images/u.png" alt="">
+                                        <a href="#" class="remove-gallery"><img src="images/cross.png" alt=""></a>
+                                    </div>
+                                    <div class="up-gallery-item">
+                                        <img src="images/u2.png" alt="">
+                                        <a href="#" class="remove-gallery"><img src="images/cross.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="pet-details.html" class="btn btn-primary">Save</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

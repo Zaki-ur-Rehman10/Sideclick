@@ -13,8 +13,8 @@ body {
     /* font-family: "Raleway", sans-serif; */
     font-family: "Lato", sans-serif;
     font-size: 1.4rem;
-    max-width: 1440px;
-    margin: auto;
+    /* max-width: 1440px;
+    margin: auto; */
 }
 
 img {
@@ -1984,6 +1984,8 @@ span.card-status {
     align-items: center;
     padding: 12px 23px;
     min-height: 78px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
 }
 .card-bl {
     display: flex;
@@ -2209,6 +2211,9 @@ span.card-status {
     display: flex;
     align-items: center;
 }
+.chat-head-right:hover .chat-settings-dropdown{
+    display: block;
+}
 .chat-settings-dropdown {
     background: #fff;
     box-shadow: 0px 6px 10px 2px rgba(0, 0, 0, 0.1);
@@ -2218,6 +2223,10 @@ span.card-status {
     left: -155px;
     top: 39px;
     padding: 16px 0px;
+    display: none;
+}
+.messages-side-bar-open{
+    display: none;
 }
 .chat-settings-dropdown li a {
     font-family: 'Lato';
@@ -2241,6 +2250,7 @@ span.card-status {
 .chat-head-right {
     position: relative;
     z-index: 10;
+    padding: 10px 0px 10px 10px;
 }
 .messages-chat-section {
     padding: 10px 7px;
@@ -4328,14 +4338,606 @@ input:focus{
 .ser-dog-sizes .dog-size-boxes {
     justify-content: flex-start;
 }
+.service-location {
+    margin-top: 55px;
+    padding: 0px 34px;
+}
+.service-location h3 {
+    font-family: 'Raleway';
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 35.22px;
+    text-align: left;
+}
+.location-pick-field input {
+    border: none;
+    font-family: 'Raleway';
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28.18px;
+    text-align: left;
+}
+.location-pick-field {
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(153, 153, 153, 1);
+    border-radius: 10px;
+    height: 66px;
+    margin-top: 38px;
+    padding: 5px 15px;
+    margin-bottom: 45px;
+}
+.sitter-location-img img {
+    width: 100%;
+}
+.service-boxes-fields.service-textarea {
+    max-width: 100%;
+}
+.prodile-uploadbox h3 {
+    font-family: 'Raleway';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.18px;
+    text-align: left;
+}
+.profile-upload-sections {
+    margin-top: 58px;
+    padding: 0px 29px;
+}
+a.upload-pic:after {
+    content: "";
+    position: absolute;
+    background-image: url(../images/add2.png);
+    height: 51px;
+    width: 51px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    right: 11px;
+    top: 13px;
+}
+a.upload-pic {
+    position: relative;
+    display: inline-block;
+    margin-top: 25px;
+}
+.gall-upload p {
+    font-family: 'Raleway';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+}
+.gall-upload {
+    margin-top: 48px;
+}
+.gall-upload h3 {
+    font-family: 'Raleway';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.18px;
+    text-align: left;
+    margin-bottom: 12px;
+}
+.gall-upload .add-pet .add-btn {
+    min-width: unset;
+}
+.gall-upload .add-pet {
+    min-height: 165px;
+    min-width: 165px;
+    margin-right: 14px;
+}
+.up-gallery-item img {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+.up-gallery-item {
+    max-height: 165px;
+    max-width: 165px;
+    position: relative;
+}
+a.remove-gallery {
+    position: absolute;
+    top: 0;
+    display: block;
+    right: 1px;
+}
+.up-gallery-item {
+    height: 165px;
+    width: 165px;
+    position: relative;
+    margin-right: 14px;
+    margin-bottom: 14px;
+}
+.gall-upload .cards-data {
+    flex-wrap: wrap;
+}
+.application-sent-data .btn {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 18px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 180px;
+    margin: auto;
+    border-radius: 15px;
+    padding: 23px 10px;
+}
+.application-sent-data p {
+    font-family: 'Raleway';
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 33px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.7);
+    max-width: 554px;
+    margin: auto;
+    margin-bottom: 38px;
+}
+.application-sent-data h2 {
+    font-family: 'Raleway';
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 35.22px;
+    text-align: center;
+    margin-bottom: 19px;
+}
+.application-sent-data img {
+    margin-bottom: 5px;
+}
+.application-sent-data h1 {
+    font-family: 'Raleway';
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 41.09px;
+    text-align: center;
+    color: var(--primary);
+    margin-bottom: 21px;
+}
+.application-sent-data {
+    text-align: center;
+    padding: 73px 10px;
+}
+section.edit-pet-head {
+    border-bottom: 7px solid rgba(245, 238, 238, 1);
+    margin-top: 44px;
+    padding-bottom: 11px;
+}
+.edit-head-data {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.edit-head-data h4 {
+    font-family: 'Lato';
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 24px;
+    text-align: left;
+    margin-bottom: 0px;
+    margin-right: 43px;
+}
+.h-head-item {
+    display: flex;
+    align-items: center;
+    margin-right: 32px;
+}
+.h-head-item img {
+    height: 117px;
+    width: 117px;
+    border-radius: 50px;
+    margin: 0px 31px 0px 0px;
+}
+.h-head-item .btn {
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 28.8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 112px !important;
+    min-width: 112px;
+    border-radius: 10px;
+    padding: 9px 0px;
+    margin: 0px;
+}
+.edit-pet-body-data {
+    margin-top: 34px;
+    padding: 0px 35px;
+    margin-bottom: 100px;
+}
+.edit-pet-options label {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+    text-align: left;
+    margin-bottom: 18px;
+}
+.edit-pet-options input {
+    border: 1px solid rgba(153, 153, 153, 1);
+    font-family: 'Raleway';
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.13px;
+    text-align: left;
+    height: 65px;
+    border-radius: 10px;
+    color: rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+.edit-pet-options select {
+    border: 1px solid rgba(153, 153, 153, 1);
+    font-family: 'Raleway';
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.13px;
+    text-align: left;
+    height: 65px;
+    border-radius: 10px;
+    color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    padding-left: 66px;
+}
+.edit-field-item img {
+    position: absolute;
+    bottom: 2px;
+    left: 7px;
+    z-index: 2;
+}
+.edit-field-item {
+    margin-bottom: 45px;
+    position: relative;
+}
+input#Type {
+    padding-left: 74px;
+}
+input#Birthday {
+    padding-left: 53px;
+}
+input#Birthday::-webkit-calendar-picker-indicator{
+    left: 10px;
+}
+.edit-field-textarea textarea {
+    margin-top: 7px;
+    border-radius: 10px;
+    resize: none;
+    min-height: 174px;
+}
+.edit-field-textarea {
+    margin-top: 20px;
+}
+.edit-pet-options .btn {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 18px;
+    text-align: center;
+    display: flex;
+    max-width: 180px;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    border-radius: 15px;
+    padding: 23px 0px;
+    margin-top: 22px;
+}
+section.edit-pet-body:has(.saved-pet-options) {
+    margin-top: 70px;
+}
+.pet-placeholder-image .btn img {
+    margin-right: 8px;
+}
+.pet-placeholder-image .btn {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.6px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 97px;
+    margin: auto;
+    border-radius: 30px;
+    margin-top: 20px;
+    padding: 8px 0px;
+}
+.pet-placeholder-image h3 {
+    margin-top: 16px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38.4px;
+    text-align: center;
+    font-family: 'Lato';
 
+}
+.pet-placeholder-image {
+    text-align: center;
+}
+.top-saved-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.saved-pet-options h3 {
+    color: var(--primary);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+    text-align: left;
+    font-family: 'Lato';
 
-
-
-
+}
+.top-saved-item img {
+    margin-right: 10px;
+}
+.top-saved-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 49px;
+    margin-right: 74px;
+}
+.saved-pet-options {
+    margin-top: 35px;
+}
+.saved-pet-options p {
+    font-family: 'Raleway';
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28.18px;
+    text-align: left;
+    margin-bottom: 0px;
+    color: rgba(0, 0, 0, 0.5);
+}
+.short-bio p {
+    line-height: 37px;
+}
+.short-bio h3 {
+    margin-bottom: 23px;
+}
+.short-bio {
+    margin-top: 18px;
+}
+.vaca-record img {
+    height: 165px;
+    width: 165px;
+    object-fit: cover;
+    margin-right: 14px;
+}
+.vaca-record h3 {
+    margin-bottom: 23px;
+}
+.vaca-record {
+    margin-top: 81px;
+}
+.vaca-record-images {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.contact-fields .btn {
+    min-height: 69px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 18px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+.contact-fields textarea {
+    border: 1px solid rgba(18, 17, 11, 1);
+    height: 59px;
+    margin-bottom: 30px;
+    font-family: 'Raleway';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px;
+    text-align: left;
+    resize: none;
+    min-height: 234px;
+    border-radius: 10px;
+}
+.contact-fields input {
+    border: 1px solid rgba(18, 17, 11, 1);
+    height: 59px;
+    margin-bottom: 30px;
+    font-family: 'Raleway';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px;
+    text-align: left;
+    border-radius: 10px;
+}
+.contact-fields p {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: left;
+    margin-bottom: 34px;
+}
+.contact-fields h1 {
+    font-family: 'Raleway';
+    font-size: 64px;
+    font-weight: 800;
+    line-height: 75.14px;
+    margin-bottom: 13px;
+}
+.contact-page-map {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+.contact-page-map img {
+    max-height: 674px;
+    width: 100%;
+    border-radius: 15px;
+}
+.contact-link-item p {
+    font-family: 'Raleway';
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28.18px;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.5);
+    margin: 0px;
+}
+.contact-link-item img {
+    margin-right: 10px;
+}
+.contact-link-item h3 {
+    font-family: 'Poppins Bold';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+    text-align: left;
+    color: var(--primary);
+}
+.contact-link-item {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+.contact-page-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 80px;
+}
+.cantact-page-info {
+    margin-top: 73px;
+    padding: 0px 40px;
+    margin-bottom: 60px;
+}
+.terms-page-info {
+    margin: 51px 0px;
+    padding: 0px 0px 0px 40px;
+}
+.terms-page-info h1 {
+    font-size: 45px;
+    font-weight: 800;
+    line-height: 52.83px;
+    text-align: left;
+    margin-bottom: 54px;
+}
+.terms-list {
+    margin-top: 15px;
+    height: 100%;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    margin-right: 24px;
+}
+.terms-list li {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.6px;
+    text-align: left;
+    margin-bottom: 26px;
+}
+.terms-page-content p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: left;
+    margin-bottom: 22px;
+}
+.terms-page-content h2 {
+    font-family: 'Lato';
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 36px;
+    text-align: left;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+.list-group span {
+    font-family: 'Lato';
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: left;
+}
+.list-group {
+    margin-bottom: 22px;
+}
+.faqs-page-content h2 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38.4px;
+    text-align: left;
+    margin-bottom: 38px;
+    font-family: 'Poppins';
+}
+.faqs-page-info {
+    margin: 79px 0px;
+    padding: 0px 36px;
+}
+.faqs-page-content button {
+    font-family: 'Poppins';
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.6px;
+    text-align: left;
+}
+.faqs-page-content button:focus{
+    box-shadow: none !important;
+}
+.faqs-page-content button:not(.collapsed) {
+    background: transparent;
+    box-shadow: unset;
+}
+.faqs-page-content .accordion-header {
+    margin: 0px;
+}
+.accordion-body {
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: rgba(60, 60, 67, 0.85);
+}
+.faqs-page-content .accordion-button:not(.collapsed)::after {
+    background-image: url(../images/xmark.png);
+    height: 24px;
+    width: 24px;
+    background-size: contain;
+}
+.faqs-page-content .accordion-button::after{
+    background-image: url(../images/f-plus.png);
+    height: 18px;
+    width: 18px;
+    background-size: contain;
+}
+.faqs-page-content .accordion-item:nth-child(1) {
+    border-top: 3px solid rgba(215, 222, 240, 1);
+}
+.faqs-page-content .accordion-item {
+    border: none;
+    border-bottom: 3px solid rgba(215, 222, 240, 1);
+    padding: 11px 0px;
+}
+a.side-bar-open span {
+    width: 25px;
+    display: block;
+    height: 4px;
+    margin-bottom: 3px;
+    position: relative;
+    background-color: var(--primary);
+}
+a.side-bar-open {
+    display: none;
+}
 
 
 @media(max-width:1400px){
+    .faqs-page-info {
+        padding: 0px;
+    }
+    .edit-pet-body-data{
+        padding: 0px;
+    }
     .sitter-list-info{
         padding: 0px;
     }
@@ -4382,6 +4984,18 @@ input:focus{
     .service-skill-cards{
         padding: 0px;
     }
+    .service-location{
+        padding: 0px;
+    }
+    .profile-upload-sections{
+        padding: 0px;
+    }
+    .cantact-page-info{
+        padding: 0px;
+    }
+    .terms-page-info{
+        padding: 0px;
+    }
 }
 @media(max-width:1200px){
     .sitter-tabs .review-card-bottom {
@@ -4396,8 +5010,76 @@ input:focus{
     .sitter-top-check {
         max-width: 737px;
     }
+    a.side-bar-open {
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+    .dashboard-inner {
+        overflow: hidden;
+        margin-top: 40px;
+    }
+    body:has(.dashboard-sidebar.active){
+        height:100% ;
+        width: 100%;
+        position: fixed;
+    }
+    .dashboard-inner > .row > .col-md-3.active{
+        opacity: 1;
+        
+        width: 100%;
+    }
+    .dashboard-inner > .row > .col-md-3 {
+        position: absolute;
+        left: 0;
+        right: 0;
+        width: 0%;
+        top: 0;
+        bottom: 0;
+        height: 100vh;
+        background: #0000004f;
+        z-index: 100000;
+        opacity: 0;
+    }
+    .dashboard-sidebar a.side-bar-open {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        height: 20px;
+        width: 20px;
+        border: 1px solid var(--primary);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50px;
+    }
+    .dashboard-inner > .row > .col-md-3 .dashboard-sidebar {
+        position: absolute;
+        left: -300px;
+        transition: all 0.3s;
+    }
+    .dashboard-inner > .row > .col-md-3 .dashboard-sidebar.active {
+        left: 0;
+        background: #fff;
+        border-radius: 0px;
+        top: 0;
+        bottom: 0;
+        height: 100vh;
+        overflow: auto;
+        transition: all 0.3s;
+        min-width: 300px;
+    }
+    .dashboard-inner > .row > .col-md-9 {
+        width: 100%;
+    }
 }
 @media(max-width:991px){
+    .my-message p {
+        max-width: 90%;
+    }
+    .other-u-msg {
+        max-width: 90%;
+        width: unset;
+    }
     .sitter-tabs .review-card-bottom {
         flex-direction: row;
     }
@@ -4425,6 +5107,54 @@ input:focus{
     }
     .service-skill-cards > .row .col-lg-6:nth-child(1) {
         padding-right: 1.5rem;
+    }
+    
+    .terms-list {
+        border: 0px;
+        margin-right: 0px;
+    }
+    .messages-section .col-md-4 {
+        width: 0%;
+    }
+    
+    .messages-section .col-md-8 {
+        width: 100%;
+    }
+    .messages-section .users-message-list {
+        display: none;
+    }
+    .messages-side-bar-open {
+        display: block;
+        margin-right: 12px;
+    }
+    .messages-chat-head {
+        padding-left: 20px;
+    }
+    .users-message-list.active {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        right: 0;
+        z-index: 15;
+        top: 0;
+        display: block;
+        background: #fff;
+        border: none;
+        box-shadow: 0px 6px 10px 2px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        overflow: auto;
+    }
+    .messages-section .col-md-4.active {
+        width: 100%;
+        position: relative;
+    }
+    a.messages-side-bar-open span {
+        width: 25px;
+        display: block;
+        height: 4px;
+        margin-bottom: 3px;
+        position: relative;
+        background-color: var(--primary);
     }
 }
 @media(max-width:767px){
@@ -4462,6 +5192,17 @@ input:focus{
     .sitter-tabs.active > .row .col-lg-6 .review-card .review-card-bottom .r-bottom-right {
         margin-bottom: 10px;
     }
+    .servics-btns {
+        flex-direction: column;
+        margin-top: 40px;
+    }
+    .servics-btns a.btn {
+        margin-top: 10px;
+    }
+    .gall-upload .cards-data {
+        justify-content: center;
+    }
+
 }
 
 
