@@ -1447,7 +1447,7 @@ section.section.section-about-bottom .section-title h2{
     color: var(--primary);
 }
 .dashboard-menu li:hover a svg path {
-    
+    fill: var(--primary);
     stroke: var(--primary);
 }
 .dashboard-menu li.active a svg path {
@@ -5094,11 +5094,399 @@ section.checklist-pg {
     margin-top: 52px;
     padding: 24px 5px;
 }
+.edit-review-container textarea {
+    width: 100%;
+    border: 1px solid rgba(18, 17, 11, 1);
+    border-radius: 10px;
+    resize: none;
+    font-family: Raleway;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28.18px;
+    text-align: left;
+    margin-top: 32px;
+    min-height: 213px;
+    padding: 20px 15px;
+}
+.review-stars {
+    margin-top: 31px;
+}
+.edit-review-container p {
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.2px;
+    color: rgba(0, 0, 0, 0.7);
+    margin-top: 10px;
+    text-transform: capitalize;
+}
+.review-profile img {
+    height: 120px;
+    width: 120px;
+    border-radius: 50px;
+}
+.edit-review-container h3 {
+    font-family: 'Lato';
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+}
+.review-profile {
+    margin-bottom: 18px;
+}
+.edit-review-container h2 {
+    font-family: 'Raleway';
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 35.22px;
+    color: var(--primary);
+    margin-bottom: 49px;
+}
+.edit-review-container {
+    max-width: 962px;
+    margin: auto;
+    border: 1px solid var(--primary);
+    margin-top: 105px;
+    border-radius: 30px;
+    text-align: center;
+    padding: 23px 48px;
+}
+.review-page-btns {
+    margin-top: 23px;
+}
+.review-page-btns .btn {
+    font-family: 'Lato';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 18px;
+    text-align: center;
+    padding: 23px 0px;
+    border-radius: 15px;
+    margin: 5px 5px;
+    min-width: 181px;
+}
+.edit-review-container {
+    max-width: 962px;
+    margin: auto;
+    border: 1px solid var(--primary);
+    margin-top: 105px;
+    border-radius: 30px;
+    text-align: center;
+    padding: 23px 48px 47px 48px;
+    margin-bottom: 92px;
+}
+.pet-select-field select {
+    border: 1px solid var(--primary);
+    border-radius: 10px;
+    font-family: 'Raleway';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 23.48px;
+    text-align: left;
+    height: 50px;
+    width: 300px;
+    color: var(--primary);
+    margin-left: 20px;
+    padding: 0px 10px;
+}
+.pet-select-field label {
+    font-family: 'Raleway';
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 23.48px;
+    text-align: left;
+}
+.pet-select-field {
+    padding: 0px 30px;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: -38px;
+}
+.user-profile-card p {
+    font-family: 'Lato';
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+    text-align: center;
+}
+.user-profile-card h3 {
+    font-family: 'Lato';
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 31.2px;
+    text-align: center;
+    margin-top: 12px;
+}
+.user-profile-card .user-profile-image img {
+    height: 126px;
+    width: 126px;
+    border-radius: 50px;
+}
+.user-profile-card {
+    max-width: 308px;
+    margin-top: 6px;
+    text-align: center;
+    padding: 24px;
+}
+.user-profile-container {
+    margin: 61px 0px;
+    padding: 0px 21px;
+}
+.user-profile-info .btn img {
+    margin-right: 10px;
+}
+.user-profile-info .btn {
+    font-family: 'Lato';
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.6px;
+    text-align: left;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    min-width: 153px;
+}
+.user-profile-info {
+    margin-top: 34px;
+}
+.user-profile-info span {
+    color: var(--primary);
+}
+.user-profile-info h3 {
+    font-family: 'Raleway';
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28.18px;
+    text-align: left;
+    margin-bottom: 29px;
+}
+.user-profile-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 13px;
+    margin-bottom: 44px;
+    flex-wrap: wrap;
+}
+.user-profile-data {
+    padding-left: 17px;
+}
+.siiter-profile-details {
+    margin-top: 33px;
+}
+.sitter-profile-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 22px 27px;
+}
+.sitter-profile-left {
+    display: flex;
+    align-items: center;
+}
+.sitter-profile-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+.sitter-profile-left img {
+    height: 86px;
+    width: 86px;
+    border-radius: 50px;
+    margin-right: 17px;
+}
+.sitter-profile-title h3 {
+    font-family: 'Lato';
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: left;
+    margin-bottom: 0px;
+    margin-right: 34px;
+}
+.sitter-profile-status span {
+    color: rgba(83, 150, 68, 1);
+    margin-left: 7px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
 
-
+.sitter-profile-status p {
+    margin-bottom: 0px;
+}
+.sitter-profile-status {
+    font-family: 'Lato';
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+.sitter-profile-left > div > p {
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 23px;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.7);
+    max-width: 293px;
+    text-transform: capitalize;
+}
+.sitter-profile-right .btn {
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.2px;
+    text-align: center;
+    border-radius: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.sitt-prof-reviews p {
+    font-family: 'Lato';
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14.4px;
+    text-align: left;
+    margin-bottom: 0px;
+    margin-left: 4px;
+}
+.sitt-prof-reviews {
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+}
+.sitter-profile-right {
+    text-align: right;
+}
+.sitter-availibility {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 27px;
+    flex-wrap: wrap;
+}
+.sitter-availibility .availabily-status {
+    margin-top: 0px;
+}
+.sitter-profile-hide label {
+    font-family: 'Lato';
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 26.4px;
+    text-align: left;
+    text-transform: capitalize;
+}
+.sitter-profile-hide {
+    padding-right: 0px;
+    border: 0px;
+}
+.sitter-profile-calender .calender-column {
+    margin-right: auto;
+    margin-left: unset;
+    margin-top: 25px;
+}
+.profile-card-btns .btn svg {
+    margin-right: 5px;
+}
+.profile-card-btns .btn {
+    font-family: 'Lato';
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.6px;
+    text-align: left;
+    border-radius: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+}
+.profile-card-btns .btn:hover svg path{
+    fill: var(--white);
+}
+.user-profile-container:has(div#pills-sitter.active) .profile-card-btns {
+    display: block;
+}
+.profile-card-btns {
+    display: none;
+}
+a.edit-profile-btn {
+    display: flex;
+    position: absolute;
+    height: 37px;
+    width: 37px;
+    bottom: 0;
+    background: var(--primary);
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    right: 0;
+}
+a.edit-profile-btn img {
+    width: 100% !important;
+    height: 100% !important;
+}
+.user-profile-image {
+    position: relative;
+    max-width: max-content;
+    margin: auto;
+}
+.user-profile-field-item input {
+    border: 1px solid rgba(153, 153, 153, 1);
+    border-radius: 10px;
+    font-family: 'Raleway';
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.13px;
+    text-align: left;
+    height: 65px;
+    color: var(--black);
+    margin-bottom: 32px;
+}
+.user-profile-field-item label {
+    font-family: 'Lato';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+    text-align: left;
+    margin-bottom: 10px;
+    color: var(--primary);
+}
+.user-profile-edit-fields .btn {
+    font-family: 'Lato';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 18px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 440px;
+    margin: auto;
+    height: 65px;
+    border-radius: 15px;
+}
 
 
 @media(max-width:1400px){
+    .user-profile-container {
+        padding: 0px ;
+    }
+    .user-profile-data {
+        padding: 0px ;
+    }
+    .pet-select-field{
+        padding: 0px;
+    }
     .faqs-page-info {
         padding: 0px;
     }
@@ -5244,6 +5632,12 @@ section.checklist-pg {
     }
 }
 @media(max-width:991px){
+    .user-profile-edit-fields {
+        margin-top: 40px;
+    }
+    .user-profile-data {
+        margin-top: 40px;
+    }
     .my-message p {
         max-width: 90%;
     }
@@ -5356,6 +5750,20 @@ section.checklist-pg {
         right: 0;
         margin-bottom: 23px;
         margin-top: -15px;
+    }
+}
+@media(max-width:667px){
+    .booking-tabs ul {
+        display: block;
+        border: none;
+    }
+    .booking-tabs .nav-link {
+        margin-bottom: 0px;
+        margin-top: 9px;
+        display: block;
+        width: 100%;
+        text-align: center;
+        border-bottom: 8px solid #F5EEEE;
     }
 }
 @media(max-width:500px){

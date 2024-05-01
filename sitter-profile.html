@@ -412,7 +412,7 @@
                                     <h3>Availabily</h3>
                                     <div class="calender-column">
                                         <div id="selectedCount"></div>
-                                        <div id="calendar2"></div>
+                                        <div id="calendar"></div>
                                     </div>
                                     <div class="availabily-status">
                                         <span></span>
@@ -671,62 +671,6 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/scripts.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
-    <script>
-        $(function() {
-          $("#calendar2").datepicker({
-            onSelect: function(dateText, inst) {
-              var selectedDate = new Date(dateText);
-              var dateString = $.datepicker.formatDate('yy-mm-dd', selectedDate);
-              var index = selectedDates.indexOf(dateString);
-              if (index === -1) {
-                selectedDates.push(dateString);
-                $(this).find('td.ui-datepicker-current-day').addClass('selected');
-              } else {
-                selectedDates.splice(index, 1);
-                $(this).find('td.ui-datepicker-current-day').removeClass('selected');
-              }
-              updateSelectedCount();
-            },
-            beforeShowDay: function(date) {
-              var dateString = $.datepicker.formatDate('yy-mm-dd', date);
-              if ($.inArray(dateString, selectedDates) != -1) {
-                return [true, "selected"];
-              }
-              return [true, ""];
-            }
-          });
-      
-          var selectedDates = [];
-      
-          $(document).on('dblclick', '#calendar .ui-datepicker-calendar tbody td', function() {
-            var date = $(this).text();
-            var month = $("#calendar .ui-datepicker-month").val();
-            var year = $("#calendar .ui-datepicker-year").val();
-            var dateString = year + '-' + (parseInt(month) + 1) + '-' + date;
-            if (!$(this).hasClass('ui-datepicker-unselectable')) {
-              var index = selectedDates.indexOf(dateString);
-              if (index === -1) {
-                selectedDates.push(dateString);
-                $(this).addClass('selected');
-              } else {
-                selectedDates.splice(index, 1);
-                $(this).removeClass('selected');
-              }
-              updateSelectedCount();
-            }
-          });
-      
-          $(document).on('click', '#clearButton', function() {
-            $("#calendar .selected").removeClass('selected');
-            selectedDates = [];
-            updateSelectedCount();
-          });
-      
-          function updateSelectedCount() {
-            var count = selectedDates.length;
-            $("#selectedCount").text(count + " Day selected");
-          }
-        });
-      </script>
+ 
   </body>
 </html>

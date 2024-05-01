@@ -7,10 +7,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/rehan.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -20,7 +21,7 @@
                     <div class="col-md-3 col-5">
                         <div class="header-logo">
                             <a href="#">
-                                <img src="images/logo-1.svg" alt="">
+                                <img src="../images/logo-1.svg" alt="">
                             </a>
                         </div>
                     </div>
@@ -36,10 +37,10 @@
                                 <div class="menu-left-items">
                                     <nav>
                                         <ul>
-                                            <li><a href="#">About</a></li>
-                                            <li><a href="#">BLOG</a></li>
-                                            <li><a href="#">Contact</a></li>
-                                            <li><a href="#">Become a sitter</a></li>
+                                            <li><a href="../about-us.html">About</a></li>
+                                            <li><a href="../blog.html">BLOG</a></li>
+                                            <li><a href="../contact.html">Contact</a></li>
+                                            <li><a href="../become-sitter.html">Become a sitter</a></li>
                                             <li><a href="#">Login</a></li>
                                         </ul>
                                     </nav>
@@ -47,7 +48,7 @@
                                 <div class="header-language-switcher">
                                     <div class="language-switcher">
                                         <a href="#">
-                                            <img src="images/Ellipse14.png" alt="">
+                                            <img src="../images/Ellipse14.png" alt="">
                                         </a>
                                     </div>
                                 </div>
@@ -58,17 +59,23 @@
             </div>
         </div>
     </header>
-    <section class="pet-skip-calender">
+    <section class="edit-review-page">
         <div class="container">
-            <h2>Select Dates</h2>
-            <div class="calender-column">
-                <button id="clearButton">Clear all</button>
-                <div id="calendar"></div>
-                <div id="selectedCount"></div>
-            </div>
-            <div class="calender-btns">
-                <a href="pickservise.html" class="skip-btn">Clear</a>
-                <a href="needswalk.html" class="btn btn-primary">Save</a>
+            <div class="edit-review-container">
+                <h2>Add review</h2>
+                <div class="review-profile">
+                    <img src="../images/review-user.png" alt="">
+                </div>
+                <h3>Elisa</h3>
+                <p>A dedicated pet loving human, A dedicated pet loving...</p>
+                <div class="review-stars">
+                    <img src="../images/review-star.png" alt="">
+                </div>
+                <textarea placeholder="Write a review"></textarea>
+                <div class="review-page-btns">
+                    <a href="#" class="btn skip-btn">Cancel</a>
+                    <a href="#" class="btn btn-primary">Submit</a>
+                </div>
             </div>
         </div>
     </section>
@@ -77,7 +84,7 @@
             <div class="row">
                 <div class="col-md-3">
                     <div class="footer-logo">
-                        <img src="images/logo-1.svg" alt="">
+                        <img src="../images/logo-1.svg" alt="">
                     </div>
                     <div class="address">
                         <ul>
@@ -99,9 +106,9 @@
                     </div>
                     <div class="social-icons">
                         <ul>
-                            <li><a href="#"><img src="images/ri_instagram-line.svg" alt=""></a></li>
-                            <li><a href="#"><img src="images/ant-design_x-outlined.svg" alt=""></a></li>
-                            <li><a href="#"><img src="images/evaFacebookFill0.svg" alt=""></a></li>
+                            <li><a href="#"><img src="../images/ri_instagram-line.svg" alt=""></a></li>
+                            <li><a href="#"><img src="../images/ant-design_x-outlined.svg" alt=""></a></li>
+                            <li><a href="#"><img src="../images/evaFacebookFill0.svg" alt=""></a></li>
                         </ul>
                     </div>
                 </div>
@@ -129,14 +136,9 @@
             </div>
         </div>
     </footer>
-    
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/scripts.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
-    <script>
-        
-      </script>
-    
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/scripts.js"></script>
+
   </body>
 </html>
