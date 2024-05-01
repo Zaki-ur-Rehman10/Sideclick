@@ -13,8 +13,8 @@ body {
     /* font-family: "Raleway", sans-serif; */
     font-family: "Lato", sans-serif;
     font-size: 1.4rem;
-    /* max-width: 1440px;
-    margin: auto; */
+    max-width: 1440px;
+    margin: auto;
 }
 
 img {
@@ -4929,6 +4929,173 @@ a.side-bar-open span {
 a.side-bar-open {
     display: none;
 }
+.checklist-users h3 {
+    font-family: 'Lato';
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 31.2px;
+    text-align: center;
+}
+.checklist-users img {
+    height: 80px;
+    width: 80px;
+    border-radius: 50px;
+    margin-bottom: 10px;
+}
+.checklist-users {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.checklist-data {
+    margin-top: 49px;
+    margin-left: 68px;
+    max-width: 586px;
+    margin-bottom: 17px;
+}
+.checklist-head {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.checklist-item {
+    margin-right: 26px;
+    margin-bottom: 15px;
+}
+.checklist-users .checklist-item:nth-last-child(1) {
+    margin-right: 10px;
+}
+.checklist-time img {
+    margin-right: 10px;
+}
+.checklist-time p {
+    font-family: 'Raleway';
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.13px;
+    text-align: left;
+    margin: 0px;
+}
+.checklist-time span {
+    font-family: 'Raleway';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.78px;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.5);
+}
+.checklist-time {
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(87, 86, 86, 1);
+    height: 65px;
+    border-radius: 10px;
+    width: 200px;
+    margin-top: 26px;
+    padding: 10px;
+}
+.checklist-map {
+    height: 100%;
+    width: 100%;
+}
+.checklist-map img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+section.checklist-pg {
+    padding: 0px 7px;
+}
+.check-option-item p span {
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+.check-option-item p {
+    font-family: 'Lato';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 21.8px;
+}
+.check-option-item > span {
+    display: block;
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.2px;
+    color: var(--primary);
+    margin-top: 11px;
+}
+.check-option-item img {
+    height: 40px;
+    width: 40px;
+    object-fit: contain;
+}
+.checklist-options .check-option-item:nth-last-child(1) {
+    margin-right: 0px;
+}
+.check-option-item {
+    border: 1px solid var(--primary);
+    height: 101px;
+    width: 103px;
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.checklist-options {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 23px;
+}
+.checklist-page-btns {
+    margin-top: 17px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.checklist-page-btns .btn-secondary {
+    font-family: 'Lato';
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-right: 10px;
+    padding: 19px 0px;
+    min-width: 215px;
+    margin-bottom: 10px;
+}
+.checklist-desc {
+    border: 1px solid var(--primary);
+    border-radius: 10px;
+    margin-top: 25px;
+    padding: 16px 23px 16px 20px;
+}
+.checklist-desc p {
+    font-family: 'Raleway';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25px;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 0px;
+}
+.checklist-data .btn-primary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lato';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 18px;
+    text-align: center;
+    max-width: 185px;
+    border-radius: 15px;
+    margin-left: auto;
+    margin-top: 52px;
+    padding: 24px 5px;
+}
+
+
 
 
 @media(max-width:1400px){
@@ -4995,6 +5162,10 @@ a.side-bar-open {
     }
     .terms-page-info{
         padding: 0px;
+    }
+    .checklist-data {
+        margin-left: 25px;
+        margin-right: 25px;
     }
 }
 @media(max-width:1200px){
@@ -5155,6 +5326,12 @@ a.side-bar-open {
         margin-bottom: 3px;
         position: relative;
         background-color: var(--primary);
+    }
+    section.checklist-pg .row {
+        flex-direction: column-reverse;
+    }
+    .checklist-map {
+        height: 400px;
     }
 }
 @media(max-width:767px){
