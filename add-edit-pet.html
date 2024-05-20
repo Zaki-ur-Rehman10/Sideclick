@@ -2,8 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SideLick</title>
+    <title>Add/Edit pet</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -13,13 +14,13 @@
   </head>
   <body>
     <header>
-        <div class="top-header-navigaction">
+        <div class="top-header-navigation">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-md-3 col-5">
                         <div class="header-logo">
                             <a href="#">
-                                <img src="images/logo-1.svg" alt="">
+                                <img src="images/Sidelick-logo.svg" alt="Sidelick logo">
                             </a>
                         </div>
                     </div>
@@ -46,7 +47,7 @@
                                 <div class="header-language-switcher">
                                     <div class="language-switcher">
                                         <a href="#">
-                                            <img src="images/Ellipse14.png" alt="">
+                                            <img src="images/Lebanon-Flag.png" alt="Flag of Lebanon">
                                         </a>
                                     </div>
                                 </div>
@@ -59,15 +60,41 @@
     </header>
     <section class="edit-pet-head">
         <div class="container">
-           <div class="edit-head-data">
-                <h4>I have a : </h4>
-                <div class="h-head-item">
-                    <img src="images/dog-e.png" alt="">
-                    <a href="#" class="btn btn-primary">Dog</a>
-                </div>
-                <div class="h-head-item">
-                    <img src="images/cat-e.png" alt="">
-                    <a href="#" class="btn btn-secondary">Cat</a>
+           <div class="edit-head-data search-form-container">
+                <div class="search-wrapper-top">
+                    <div class="what-i-have">
+                        <div class="w-title">
+                            <p><strong>I have a : </strong></p>
+                        </div>
+                        <div class="custom-radio-button" id="toggle-cat-dog">
+                            <div class="radio-button-inner">
+                                <label>
+                                    <input type="radio" name="ihave" value="dog" checked="">
+                                    <span class="radio-image-wrapper">
+                                        <span class="label">
+                                            Dog
+                                        </span>
+                                        <span class="image">
+                                            <img src="images/dog.png" alt="Single dog standing">
+                                        </span>
+                                    </span>
+                                </label>
+                            </div>
+                            <div class="radio-button-inner">
+                                <label>
+                                    <input type="radio" name="ihave" value="cat">
+                                    <span class="radio-image-wrapper">
+                                        <span class="label">
+                                            Cat
+                                        </span>
+                                        <span class="image">
+                                            <img src="images/cat.png" alt="Single cat sitting">
+                                        </span>
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
                 </div>
            </div>
         </div>
@@ -180,7 +207,7 @@
             <div class="row">
                 <div class="col-md-3">
                     <div class="footer-logo">
-                        <img src="images/logo-1.svg" alt="">
+                        <img src="images/Sidelick-logo.svg" alt="Sidelick logo">
                     </div>
                     <div class="address">
                         <ul>
@@ -202,9 +229,10 @@
                     </div>
                     <div class="social-icons">
                         <ul>
-                            <li><a href="#"><img src="images/ri_instagram-line.svg" alt=""></a></li>
-                            <li><a href="#"><img src="images/ant-design_x-outlined.svg" alt=""></a></li>
-                            <li><a href="#"><img src="images/evaFacebookFill0.svg" alt=""></a></li>
+                            <li><a href="https://www.instagram.com/meetsidelick"><img src="images/instagram-logo.svg" alt="instagram Logo"></a></li>
+                            <li><a href="https://www.twitter.com/meetsidelick"><img src="images/twitter-x-logo.svg" alt="Twitter Logo"></a></li>
+                            <li><a href="https://www.facebook.com/sidelick"><img src="images/facebook-logo.svg" alt="Facebook Logo"></a></li>
+                            <li><a href="https://www.tiktok.com/@meetsidelick?_t=8lSxXF9CIBG&_r=1"><img src="images/tiktok.svg" alt="Tiktok Logo"></a></li>
                         </ul>
                     </div>
                 </div>
@@ -228,7 +256,7 @@
                 </div>
             </div>
             <div class="copyright-text">
-                <p>© 2023 sidelick.com. All Rights Reserved</p>
+                <p>© 2024 sidelick.com. All Rights Reserved</p>
             </div>
         </div>
     </footer>

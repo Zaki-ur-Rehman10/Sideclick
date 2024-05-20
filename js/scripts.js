@@ -6,11 +6,15 @@ $(document).ready(function(){
         $('.dashboard-sidebar').toggleClass('active');
         $('.dashboard-inner > .row > .col-md-3').toggleClass('active');
     })
-    $('body').on('click', "a.messages-side-bar-open" , function(e){
+    $('body').on('click', ".sitter-profile-btns > a" , function(e){
+      e.preventDefault();
+      $(this).addClass('active').siblings().removeClass('active');
+  })
+  $('body').on('click', "a.messages-side-bar-open" , function(e){
         e.preventDefault();
         $('.messages-section .col-md-4').toggleClass('active');
         $('.messages-section .users-message-list').toggleClass('active');
-    })
+  })
     
     $('#toggle-cat-dog').find('input[type="radio"]').change(function(){
         var $this = $(this);
@@ -31,13 +35,12 @@ $(document).ready(function(){
         $(this).toggleClass('active');
         return false;
     });
-    // $('body').on('click', ".dash-menu-item" , function(e){
-    //     e.preventDefault();
-    //     var id 	=	$(this).data('tab');
-    //     $('.tab[data-tab='+id+']').addClass('active').siblings().removeClass('active');
-    //     $(this).addClass('active').siblings().removeClass('active');
+    $('body').on('click', ".custom-radio-button > a" , function(e){
+        e.preventDefault();
+        var id 	=	$(this).data('tab');
+        $('.tab[data-tab='+id+']').addClass('active').siblings().removeClass('active');
 
-    // });
+    });
     $('body').on('click', ".list-filter" , function(e){
         e.preventDefault();
         $('.sitter-tabs').addClass('active');
@@ -193,3 +196,76 @@ var slider2 = new rSlider({
         console.log(vals);
     }
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const video = document.getElementById("video");
+  const videoOverlay = document.getElementById("videoOverlay");
+
+  const playVideo = () => {
+      video.play();
+      videoOverlay.classList.add("hidden");
+  };
+
+  videoOverlay.addEventListener("click", playVideo);
+
+  video.addEventListener("pause", () => {
+      videoOverlay.classList.remove("hidden");
+  });
+
+  video.addEventListener("play", () => {
+      videoOverlay.classList.add("hidden");
+  });
+});
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("myForm");
+
+  form.addEventListener("submit", function(event) {
+      event.preventDefault(); 
+
+      const formData = new FormData(form); 
+
+      fetch("your-server-endpoint-url", {
+          method: "POST",
+          body: formData
+      })
+      .then(response => response.json())
+      .then(data => {
+          document.getElementById("result").innerText = "Form submitted successfully!";
+          console.log("Success:", data);
+      })
+      .catch(error => {
+          document.getElementById("result").innerText = "Error submitting form.";
+          console.error("Error:", error);
+      });
+  });
+});
+const express = require('express');
+const app = express();
+const multer = require('multer');
+const upload = multer(); // For parsing multipart/form-data
+
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
+app.post('/your-server-endpoint-url', upload.none(), (req, res) => {
+    const name = req.body.name;
+    const email = req.body.email;
+    const message = req.body.message;
+
+    // Process the form data (e.g., save to database)
+
+    res.json({ message: "Form data received", name, email, message });
+});
+
+app.listen(3000, () => {
+    console.log('Server is running on port 3000');
+});
+
+
+
+
+
+
+

@@ -2,8 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <meta name="description" content="Connect with trusted sitters and walkers for dogs and cats on Sidelick. Explore comprehensive, insured services tailored to your pet’s needs and your peace of mind.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SideLick</title>
+    <title>Home • Book trusted dog walkers & pet sitters | Lebanon</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -13,13 +15,13 @@
   </head>
   <body>
     <header>
-        <div class="top-header-navigaction">
+        <div class="top-header-navigation">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-md-3 col-5">
                         <div class="header-logo">
                             <a href="#">
-                                <img src="images/logo-1.svg" alt="">
+                                <img src="images/Sidelick-logo.svg" alt="Sidelick logo">
                             </a>
                         </div>
                     </div>
@@ -46,7 +48,7 @@
                                 <div class="header-language-switcher">
                                     <div class="language-switcher">
                                         <a href="#">
-                                            <img src="images/Ellipse14.png" alt="">
+                                            <img src="images/Lebanon-Flag.png" alt="Flag of Lebanon">
                                         </a>
                                     </div>
                                 </div>
@@ -68,7 +70,7 @@
                     <div class="search-form-container">
                         <div class="search-form-wrapper">
                             <form action="">
-                                <div class="search-warpper-top">
+                                <div class="search-wrapper-top">
                                     <div class="what-i-have">
                                         <div class="w-title">
                                             <p><strong>I have a : </strong></p>
@@ -82,7 +84,7 @@
                                                             Dog
                                                         </span>
                                                         <span class="image">
-                                                            <img src="images/a14c9673d0a8bef9f46c034b7f0c9681.png" alt="">
+                                                            <img src="images/dog.png" alt="Single dog standing">
                                                         </span>
                                                     </span>
                                                 </label>
@@ -95,7 +97,7 @@
                                                             Cat
                                                         </span>
                                                         <span class="image">
-                                                            <img src="images/12c8227ea2460e3019b0ee665294e999.png" alt="">
+                                                            <img src="images/cat.png" alt="Single cat sitting">
                                                         </span>
                                                     </span>
                                                 </label>
@@ -106,91 +108,244 @@
                                 <div class="search-wrapper-middle" id="options-for-dog-search">
                                     <div class="radio-button-wrapper">
                                         <div class="custom-radio-button">
-                                            <div class="radio-button-inner">
-                                                <label>
-                                                    <input type="radio" name="select-service" value="dog" checked>
-                                                    <span class="radio-image-wrapper">
-                                                        <span class="image">
-                                                            <img src="images/dog walking 1.png" alt="">
-                                                        </span>
-                                                        <span class="label">
-                                                            Dog Walking
-                                                        </span>
-                                                    </span>
-                                                </label>
-                                            </div>
-                                            <div class="radio-button-inner">
-                                                <label>
-                                                    <input type="radio" name="select-service" value="dog">
-                                                    <span class="radio-image-wrapper">
-                                                        <span class="image">
-                                                            <img src="images/Untitled_Artwork 10 1.png" alt="">
-                                                        </span>
-                                                        <span class="label">
-                                                            Dog Boarding
-                                                        </span>
-                                                    </span>
-                                                </label>
-                                            </div>
-                                            <div class="radio-button-inner">
-                                                <label>
-                                                    <input type="radio" name="select-service" value="dog">
-                                                    <span class="radio-image-wrapper">
-                                                        <span class="image">
-                                                            <img src="images/drop in dog 1.png" alt="">
-                                                        </span>
-                                                        <span class="label">
-                                                            dog Daycare
-                                                        </span>
-                                                    </span>
-                                                </label>
-                                            </div>
-                                            <div class="radio-button-inner">
-                                                <label>
-                                                    <input type="radio" name="select-service" value="dog">
-                                                    <span class="radio-image-wrapper">
-                                                        <span class="image">
-                                                            <img src="images/Untitled_Artwork 7 1.png" alt="">
-                                                        </span>
-                                                        <span class="label">
-                                                            Drop-in visit
-                                                        </span>
-                                                    </span>
-                                                </label>
-                                            </div>
+                                            <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link active" id="pills-Walking-tab" data-bs-toggle="pill" data-bs-target="#pills-Walking" type="button" role="tab" aria-controls="pills-Walking" aria-selected="true">
+                                                        <div class="radio-button-inner">
+                                                            <label>
+                                                                <input type="radio" name="select-service" value="dog" checked>
+                                                                <span class="radio-image-wrapper">
+                                                                    <span class="image">
+                                                                        <img src="images/dog-walking-mobile.png" alt="Dog walker walking mobile-view">
+                                                                    </span>
+                                                                    <span class="label">
+                                                                        Dog Walking
+                                                                    </span>
+                                                                </span>
+                                                            </label>
+                                                        </div>
+                                                    </button>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link" id="pills-Boarding-tab" data-bs-toggle="pill" data-bs-target="#pills-Boarding" type="button" role="tab" aria-controls="pills-Boarding" aria-selected="false">
+                                                        <div class="radio-button-inner">
+                                                            <label>
+                                                                <input type="radio" name="select-service" value="dog">
+                                                                <span class="radio-image-wrapper">
+                                                                    <span class="image">
+                                                                        <img src="images/dog-boarding-mobile.png" alt="Dog boarding service mobile view">
+                                                                    </span>
+                                                                    <span class="label">
+                                                                        Dog Boarding
+                                                                    </span>
+                                                                </span>
+                                                            </label>
+                                                        </div>
+                                                    </button>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link" id="pills-Daycare-tab" data-bs-toggle="pill" data-bs-target="#pills-Daycare" type="button" role="tab" aria-controls="pills-Daycare" aria-selected="false">
+                                                        <div class="radio-button-inner">
+                                                            <label>
+                                                                <input type="radio" name="select-service" value="dog">
+                                                                <span class="radio-image-wrapper">
+                                                                    <span class="image">
+                                                                        <img src="images/drop-in-visit-mobile.png" alt="Drop-in visit mobile view">
+                                                                    </span>
+                                                                    <span class="label">
+                                                                        dog Daycare
+                                                                    </span>
+                                                                </span>
+                                                            </label>
+                                                        </div>
+                                                    </button>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link" id="pills-visit-tab" data-bs-toggle="pill" data-bs-target="#pills-visit" type="button" role="tab" aria-controls="pills-visit" aria-selected="false">
+                                                        <div class="radio-button-inner">
+                                                            <label>
+                                                                <input type="radio" name="select-service" value="dog">
+                                                                <span class="radio-image-wrapper">
+                                                                    <span class="image">
+                                                                        <img src="images/pet-daycare-mobile.png" alt="pet daycare service mobile view">
+                                                                    </span>
+                                                                    <span class="label">
+                                                                        Drop-in visit
+                                                                    </span>
+                                                                </span>
+                                                            </label>
+                                                        </div>
+                                                    </button>
+                                                </li>
+                                            </ul>    
                                         </div>
                                     </div>
                                     <div class="search-form-fields">
-                                        <div class="row">
-                                            <div class="col-md-5">
-                                                <div class="form-group">
-                                                    <label>
-                                                        Dog walking near
-                                                    </label>
-                                                    <div class="field-with-icon">
-                                                        <span class="icon">
-                                                            <img src="images/lets-icons_pin-alt-light.svg" alt="">
-                                                        </span>
-                                                        <input type="text" class="form-control">
+                                        <div class="tab-content" id="pills-tabContent">
+                                            <div class="tab-pane fade show active" id="pills-Walking" role="tabpanel" aria-labelledby="pills-Walking-tab">
+                                                <div class="row">
+                                                    <div class="col-md-5">
+                                                        <div class="form-group">
+                                                            <label>
+                                                                Dog walking near
+                                                            </label>
+                                                            <div class="field-with-icon">
+                                                                <span class="icon">
+                                                                    <img src="images/map-icon.svg" alt="map icon">
+                                                                </span>
+                                                                <input type="text" class="form-control" placeholder="Enter location">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-7">
+                                                        <div class="form-group">
+                                                            <label>
+                                                                Find a dog walker available between
+                                                            </label>
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <div class="field-with-icon">
+                                                                        <span class="icon">
+                                                                            <img src="images/calendar-icon.svg" alt="Calendar Icon">
+                                                                        </span>
+                                                                        <input type="text" class="form-control">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="field-with-icon">
+                                                                        <span class="icon">
+                                                                            <img src="images/calendar-icon.svg" alt="Calendar Icon">
+                                                                        </span>
+                                                                        <input type="text" class="form-control">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-md-7">
-                                                <div class="form-group">
-                                                    <label>
-                                                        Find a dog walker available between
-                                                    </label>
-                                                    <div class="row">
-                                                        <div class="col-md-6">
+                                            <div class="tab-pane fade" id="pills-Boarding" role="tabpanel" aria-labelledby="pills-Boarding-tab">
+                                                <div class="row">
+                                                    <div class="col-md-5">
+                                                        <div class="form-group">
+                                                            <label>
+                                                                Dog Boarding near
+                                                            </label>
                                                             <div class="field-with-icon">
                                                                 <span class="icon">
-                                                                    <img src="images/bookings_red 2.svg" alt="">
+                                                                    <img src="images/map-icon.svg" alt="map icon">
                                                                 </span>
-                                                                <input type="text" class="form-control">
+                                                                <input type="text" class="form-control" placeholder="Enter location">
                                                             </div>
                                                         </div>
-                                                        <div class="col-md-6">
-                                                            <input type="text" class="form-control">
+                                                    </div>
+                                                    <div class="col-md-7">
+                                                        <div class="form-group">
+                                                            <label>
+                                                                Find a dog sitter available between
+                                                            </label>
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <div class="field-with-icon">
+                                                                        <span class="icon">
+                                                                            <img src="images/calendar-icon.svg" alt="Calendar Icon">
+                                                                        </span>
+                                                                        <input type="text" class="form-control">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="field-with-icon">
+                                                                        <span class="icon">
+                                                                            <img src="images/calendar-icon.svg" alt="Calendar Icon">
+                                                                        </span>
+                                                                        <input type="text" class="form-control">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="pills-Daycare" role="tabpanel" aria-labelledby="pills-Daycare-tab">
+                                                <div class="row">
+                                                    <div class="col-md-5">
+                                                        <div class="form-group">
+                                                            <label>
+                                                                Dog Daycare near
+                                                            </label>
+                                                            <div class="field-with-icon">
+                                                                <span class="icon">
+                                                                    <img src="images/map-icon.svg" alt="map icon">
+                                                                </span>
+                                                                <input type="text" class="form-control" placeholder="Enter location">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-7">
+                                                        <div class="form-group">
+                                                            <label>
+                                                                Find a dog sitter available between
+                                                            </label>
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <div class="field-with-icon">
+                                                                        <span class="icon">
+                                                                            <img src="images/calendar-icon.svg" alt="Calendar Icon">
+                                                                        </span>
+                                                                        <input type="text" class="form-control">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="field-with-icon">
+                                                                        <span class="icon">
+                                                                            <img src="images/calendar-icon.svg" alt="Calendar Icon">
+                                                                        </span>
+                                                                        <input type="text" class="form-control">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="pills-visit" role="tabpanel" aria-labelledby="pills-visit-tab">
+                                                <div class="row">
+                                                    <div class="col-md-5">
+                                                        <div class="form-group">
+                                                            <label>
+                                                                Drop-in Visit near
+                                                            </label>
+                                                            <div class="field-with-icon">
+                                                                <span class="icon">
+                                                                    <img src="images/map-icon.svg" alt="map icon">
+                                                                </span>
+                                                                <input type="text" class="form-control" placeholder="Enter location">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-7">
+                                                        <div class="form-group">
+                                                            <label>
+                                                                Find a dog sitter available between
+                                                            </label>
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <div class="field-with-icon">
+                                                                        <span class="icon">
+                                                                            <img src="images/calendar-icon.svg" alt="Calendar Icon">
+                                                                        </span>
+                                                                        <input type="text" class="form-control">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="field-with-icon">
+                                                                        <span class="icon">
+                                                                            <img src="images/calendar-icon.svg" alt="Calendar Icon">
+                                                                        </span>
+                                                                        <input type="text" class="form-control">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -204,7 +359,7 @@
                                                     <p>Your dog's size :</p>
                                                 </div>
                                                 <div class="selectable-fields">
-                                                    <div class="custom-raion-button-2">
+                                                    <div class="Custom-radio-button-2">
                                                         <div class="radion-wrapper">
                                                             <label>
                                                                 <input type="radio" name="dog-size">
@@ -249,78 +404,185 @@
                                 <div class="search-wrapper-middle" id="options-for-cat-search">
                                     <div class="radio-button-wrapper">
                                         <div class="custom-radio-button">
-                                            <div class="radio-button-inner">
-                                                <label>
-                                                    <input type="radio" name="select-service" value="dog">
-                                                    <span class="radio-image-wrapper">
-                                                        <span class="image">
-                                                            <img src="images/Ellipse 7.png" alt="">
-                                                        </span>
-                                                        <span class="label">
-                                                            Cat Boarding
-                                                        </span>
-                                                    </span>
-                                                </label>
-                                            </div>
-                                            <div class="radio-button-inner">
-                                                <label>
-                                                    <input type="radio" name="select-service" value="dog">
-                                                    <span class="radio-image-wrapper">
-                                                        <span class="image">
-                                                            <img src="images/Ellipse 7-2.png" alt="">
-                                                        </span>
-                                                        <span class="label">
-                                                            Cat Daycare
-                                                        </span>
-                                                    </span>
-                                                </label>
-                                            </div>
-                                            <div class="radio-button-inner">
-                                                <label>
-                                                    <input type="radio" name="select-service" value="dog">
-                                                    <span class="radio-image-wrapper">
-                                                        <span class="image">
-                                                            <img src="images/Ellipse 7-3.png" alt="">
-                                                        </span>
-                                                        <span class="label">
-                                                            Drop-in visit
-                                                        </span>
-                                                    </span>
-                                                </label>
-                                            </div>
+                                            <ul class="nav nav-pills " id="pills-tab" role="tablist">
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link active" id="pills-cDaycare-tab" data-bs-toggle="pill" data-bs-target="#pills-cDaycare" type="button" role="tab" aria-controls="pills-cDaycare" aria-selected="true">
+                                                        <div class="radio-button-inner">
+                                                            <label>
+                                                                <input type="radio" name="select-service" value="dog">
+                                                                <span class="radio-image-wrapper">
+                                                                    <span class="image">
+                                                                        <img src="images/drop-in-visit-thumbnail.png" alt="Drop-in pet visit service thumbnail">
+                                                                    </span>
+                                                                    <span class="label">
+                                                                        Cat Daycare
+                                                                    </span>
+                                                                </span>
+                                                            </label>
+                                                        </div>
+                                                    </button>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link" id="pills-cvisit-tab" data-bs-toggle="pill" data-bs-target="#pills-cvisit" type="button" role="tab" aria-controls="pills-cvisit" aria-selected="true">
+                                                        <div class="radio-button-inner">
+                                                            <label>
+                                                                <input type="radio" name="select-service" value="dog">
+                                                                <span class="radio-image-wrapper">
+                                                                    <span class="image">
+                                                                        <img src="images/cat-boarding.png" alt="Cat boarding service">
+                                                                    </span>
+                                                                    <span class="label">
+                                                                        Drop-in visit
+                                                                    </span>
+                                                                </span>
+                                                            </label>
+                                                        </div>
+                                                    </button>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link " id="pills-cBoarding-tab" data-bs-toggle="pill" data-bs-target="#pills-cBoarding" type="button" role="tab" aria-controls="pills-cBoarding" aria-selected="true">
+                                                        <div class="radio-button-inner">
+                                                            <label>
+                                                                <input type="radio" name="select-service" value="dog">
+                                                                <span class="radio-image-wrapper">
+                                                                    <span class="image">
+                                                                        <img src="images/cat-sitting.png" alt="Cat sitting service">
+                                                                    </span>
+                                                                    <span class="label">
+                                                                        Cat Boarding
+                                                                    </span>
+                                                                </span>
+                                                            </label>
+                                                        </div>
+                                                    </button>
+                                                </li>
+                                            </ul>
                                         </div>
                                     </div>
                                     <div class="search-form-fields">
-                                        <div class="row">
-                                            <div class="col-md-5">
-                                                <div class="form-group">
-                                                    <label>
-                                                        Cat walking near
-                                                    </label>
-                                                    <div class="field-with-icon">
-                                                        <span class="icon">
-                                                            <img src="images/lets-icons_pin-alt-light.svg" alt="">
-                                                        </span>
-                                                        <input type="text" class="form-control">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-7">
-                                                <div class="form-group">
-                                                    <label>
-                                                        Find a cat walker available between
-                                                    </label>
-                                                    <div class="row">
-                                                        <div class="col-md-6">
+                                        <div class="tab-content" id="pills-tabContent">
+                                            <div class="tab-pane fade show active" id="pills-cDaycare" role="tabpanel" aria-labelledby="pills-profilcDaycaree-tab">
+                                                <div class="row">
+                                                    <div class="col-md-5">
+                                                        <div class="form-group">
+                                                            <label>
+                                                                Cat Daycare near
+                                                            </label>
                                                             <div class="field-with-icon">
                                                                 <span class="icon">
-                                                                    <img src="images/bookings_red 2.svg" alt="">
+                                                                    <img src="images/map-icon.svg" alt="map icon">
                                                                 </span>
                                                                 <input type="text" class="form-control">
                                                             </div>
                                                         </div>
-                                                        <div class="col-md-6">
-                                                            <input type="text" class="form-control">
+                                                    </div>
+                                                    <div class="col-md-7">
+                                                        <div class="form-group">
+                                                            <label>
+                                                                Find a cat sitter available between
+                                                            </label>
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <div class="field-with-icon">
+                                                                        <span class="icon">
+                                                                            <img src="images/calendar-icon.svg" alt="Calendar Icon">
+                                                                        </span>
+                                                                        <input type="text" class="form-control">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="field-with-icon">
+                                                                        <span class="icon">
+                                                                            <img src="images/calendar-icon.svg" alt="Calendar Icon">
+                                                                        </span>
+                                                                        <input type="text" class="form-control">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="pills-cvisit" role="tabpanel" aria-labelledby="pills-cvisit-tab">
+                                                <div class="row">
+                                                    <div class="col-md-5">
+                                                        <div class="form-group">
+                                                            <label>
+                                                                Drop-in Visit near
+                                                            </label>
+                                                            <div class="field-with-icon">
+                                                                <span class="icon">
+                                                                    <img src="images/map-icon.svg" alt="map icon">
+                                                                </span>
+                                                                <input type="text" class="form-control">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-7">
+                                                        <div class="form-group">
+                                                            <label>
+                                                                Find a cat sitter available between
+                                                            </label>
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <div class="field-with-icon">
+                                                                        <span class="icon">
+                                                                            <img src="images/calendar-icon.svg" alt="Calendar Icon">
+                                                                        </span>
+                                                                        <input type="text" class="form-control">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="field-with-icon">
+                                                                        <span class="icon">
+                                                                            <img src="images/calendar-icon.svg" alt="Calendar Icon">
+                                                                        </span>
+                                                                        <input type="text" class="form-control">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade " id="pills-cBoarding" role="tabpanel" aria-labelledby="pills-cBoarding-tab">
+                                                <div class="row">
+                                                    <div class="col-md-5">
+                                                        <div class="form-group">
+                                                            <label>
+                                                                Cat Boarding near
+                                                            </label>
+                                                            <div class="field-with-icon">
+                                                                <span class="icon">
+                                                                    <img src="images/map-icon.svg" alt="map icon">
+                                                                </span>
+                                                                <input type="text" class="form-control">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-7">
+                                                        <div class="form-group">
+                                                            <label>
+                                                                Find a cat sitter available between
+                                                            </label>
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <div class="field-with-icon">
+                                                                        <span class="icon">
+                                                                            <img src="images/calendar-icon.svg" alt="Calendar Icon">
+                                                                        </span>
+                                                                        <input type="text" class="form-control">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="field-with-icon">
+                                                                        <span class="icon">
+                                                                            <img src="images/calendar-icon.svg" alt="Calendar Icon">
+                                                                        </span>
+                                                                        <input type="text" class="form-control">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -331,10 +593,10 @@
                                         <div class="size-inner-fields">
                                             <div class="size-inner-wrapper">
                                                 <div class="title">
-                                                    <p>Your dog's size :</p>
+                                                    <p>Your cat's size :</p>
                                                 </div>
                                                 <div class="selectable-fields">
-                                                    <div class="custom-raion-button-2">
+                                                    <div class="Custom-radio-button-2">
                                                         <div class="radion-wrapper">
                                                             <label>
                                                                 <input type="radio" name="dog-size">
@@ -382,7 +644,7 @@
                 </div>
                 <div class="col-lg-5">
                     <div class="right-image">
-                        <img src="images/orignal-design 2.png" alt="">
+                        <img src="images/sidelick-pet-sitters.png" alt="Sidelick pet sitters main picture">
                     </div>
                 </div>
             </div>
@@ -403,11 +665,11 @@
                     <div class="easy-steps-wrapper">
                         <div class="easy-steps-inner">
                             <div class="steps-image">
-                                <img src="images/step1 1-2.png" alt="">
+                                <img src="images/search-pet-sitter.png" alt="Search for a pet sitter">
                             </div>
                             <div class="step-description">
                                 <h3>Browse Pet Sitters</h3>
-                                <p>Find the perfect pet sitter by filtering your preferences and consulting verified reviews.</p>
+                                <p>Find the perfect pet sitter by filtering your preferences and consulting verified reviews</p>
                             </div>
                         </div>
                     </div>
@@ -416,7 +678,7 @@
                     <div class="easy-steps-wrapper">
                         <div class="easy-steps-inner">
                             <div class="steps-image">
-                                <img src="images/step2 1-2.png" alt="">
+                                <img src="images/connect-pet-sitter.png" alt="Connect and book a pet sitter">
                             </div>
                             <div class="step-description">
                                 <h3>Connect & Book</h3>
@@ -429,7 +691,7 @@
                     <div class="easy-steps-wrapper">
                         <div class="easy-steps-inner">
                             <div class="steps-image">
-                                <img src="images/step3 1.png" alt="">
+                                <img src="images/get-updates.png" alt="Get updates from pet sitter">
                             </div>
                             <div class="step-description">
                                 <h3>Get Updates</h3>
@@ -442,7 +704,7 @@
                     <div class="easy-steps-wrapper">
                         <div class="easy-steps-inner">
                             <div class="steps-image">
-                                <img src="images/step4 1.png" alt="">
+                                <img src="images/get-feedback.png" alt="Get feedback on pet sitting service">
                             </div>
                             <div class="step-description">
                                 <h3>Give Feedback</h3>
@@ -536,7 +798,7 @@
                         <div class="services-card">
                             <div class="card-inner">
                                 <div class="card-image">
-                                    <img src="images/dog walking 1-3.png" alt="">
+                                    <img src="images/dog-walking-thumbnail.png" alt="Dog waliking service thumbnail">
                                 </div>
                                 <div class="cart-description">
                                     <h3>Dog Walking</h3>
@@ -550,7 +812,7 @@
                         <div class="services-card">
                             <div class="card-inner">
                                 <div class="card-image">
-                                    <img src="images/Untitled_Artwork 10 1-2.png" alt="">
+                                    <img src="images/dog-boarding-thumbnail.png" alt="Dog Boarding service thumbnail">
                                 </div>
                                 <div class="cart-description">
                                     <h3>Pet Boarding</h3>
@@ -564,7 +826,7 @@
                         <div class="services-card">
                             <div class="card-inner">
                                 <div class="card-image">
-                                    <img src="images/drop in dog 1-2.png" alt="">
+                                    <img src="images/dog-sitter-care.png" alt="dog sitter taking care of a dog">
                                 </div>
                                 <div class="cart-description">
                                     <h3>Pet Daycare</h3>
@@ -578,7 +840,7 @@
                         <div class="services-card">
                             <div class="card-inner">
                                 <div class="card-image">
-                                    <img src="images/Untitled_Artwork 7 1-2.png" alt="">
+                                    <img src="images/pet-daycare-mobile.png" alt="pet daycare service mobile view">
                                 </div>
                                 <div class="cart-description">
                                     <h3>Drop-In Visit</h3>
@@ -603,11 +865,11 @@
                         <div class="why-us-block">
                             <div class="why-us-block-inner">
                                 <div class="block-image">
-                                    <img src="images/980ac5516fda347d1e39ebc4a8922e9f.png" alt="">
+                                    <img src="images/dog-sitter-playing.png" alt="Dog sitter playing with a dog">
                                 </div>
                                 <div class="block-description">
                                     <h3>Safety</h3>
-                                    <p>Your pets's safety and well-being is at the heart of what we do. All our services are insured nad our caretakers are well vetted.</p>
+                                    <p>Your pet's safety and well-being is at the heart of what we do. All our services are insured and our caretakers are well vetted.</p>
                                 </div>
                             </div>
                         </div>
@@ -616,7 +878,7 @@
                         <div class="why-us-block">
                             <div class="why-us-block-inner">
                                 <div class="block-image">
-                                    <img src="images/980ac5516fda347d1e39ebc4a8922e9f.png" alt="">
+                                    <img src="images/pet-sitting-support.png" alt="Close-up of a cat's paw being held by a person, representing convenience in pet care">
                                 </div>
                                 <div class="block-description">
                                     <h3>Convenience</h3>
@@ -629,7 +891,7 @@
                         <div class="why-us-block">
                             <div class="why-us-block-inner">
                                 <div class="block-image">
-                                    <img src="images/980ac5516fda347d1e39ebc4a8922e9f.png" alt="">
+                                    <img src="images/cat-care-convenience.png" alt="Pet sitter with a tablet and two playful dogs, symbolizing supportive pet care assistance">
                                 </div>
                                 <div class="block-description">
                                     <h3>Support</h3>
@@ -708,7 +970,7 @@
             <div class="row align-items-center">
                 <div class="col-md-3">
                     <div class="newsletter-imgae">
-                        <img src="images/check your mail 1.png" alt="">
+                        <img src="images/dog-check-email.png" alt="Dog Checking Email illustration">
                     </div>
                 </div>
                 <div class="col-md-9">
@@ -717,7 +979,7 @@
                             <input type="text" placeholder="Enter Your Name" class="form-control">
                         </div>
                         <div class="form-group">
-                            <input type="text" placeholder="Enter Your Email Adress" class="form-control">
+                            <input type="text" placeholder="Enter Your Email Address" class="form-control">
                         </div>
                     </form>
                 </div>
@@ -729,7 +991,7 @@
             <div class="row">
                 <div class="col-md-3">
                     <div class="footer-logo">
-                        <img src="images/logo-1.svg" alt="">
+                        <img src="images/Sidelick-logo.svg" alt="Sidelick logo">
                     </div>
                     <div class="address">
                         <ul>
@@ -751,9 +1013,10 @@
                     </div>
                     <div class="social-icons">
                         <ul>
-                            <li><a href="#"><img src="images/ri_instagram-line.svg" alt=""></a></li>
-                            <li><a href="#"><img src="images/ant-design_x-outlined.svg" alt=""></a></li>
-                            <li><a href="#"><img src="images/evaFacebookFill0.svg" alt=""></a></li>
+                            <li><a href="https://www.instagram.com/meetsidelick"><img src="images/instagram-logo.svg" alt="instagram Logo"></a></li>
+                            <li><a href="https://www.twitter.com/meetsidelick"><img src="images/twitter-x-logo.svg" alt="Twitter Logo"></a></li>
+                            <li><a href="https://www.facebook.com/sidelick"><img src="images/facebook-logo.svg" alt="Facebook Logo"></a></li>
+                            <li><a href="https://www.tiktok.com/@meetsidelick?_t=8lSxXF9CIBG&_r=1"><img src="images/tiktok.svg" alt="Tiktok Logo"></a></li>
                         </ul>
                     </div>
                 </div>
@@ -777,7 +1040,7 @@
                 </div>
             </div>
             <div class="copyright-text">
-                <p>© 2023 sidelick.com. All Rights Reserved</p>
+                <p>© 2024 sidelick.com. All Rights Reserved</p>
             </div>
         </div>
     </footer>

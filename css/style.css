@@ -13,8 +13,8 @@ body {
     /* font-family: "Raleway", sans-serif; */
     font-family: "Lato", sans-serif;
     font-size: 1.4rem;
-    max-width: 1440px;
-    margin: auto;
+    /* max-width: 1440px;
+    margin: auto; */
 }
 
 img {
@@ -56,7 +56,7 @@ img {
     padding: 1.1rem 0 1.1rem 1.9rem;
 }
 
-.top-header-navigaction {
+.top-header-navigation {
     box-shadow: 0px 0.4rem 1rem 0px rgba(0, 0, 0, 0.25);
 }
 
@@ -144,21 +144,21 @@ img {
 }
 
 
-.search-warpper-top {
+.search-wrapper-top {
     padding: 0.6rem 1.5rem 2.4rem;
     font-size: 2rem;
     position: relative;
 }
 
-.search-warpper-top .w-title {
+.search-wrapper-top .w-title {
     min-width: 11.7rem;
 }
 
-.search-warpper-top .w-title p {
+.search-wrapper-top .w-title p {
     margin-bottom: 0;
 }
 
-.search-warpper-top:after {
+.search-wrapper-top:after {
     content: "";
     position: absolute;
     left: -1rem;
@@ -200,12 +200,12 @@ img {
     border: 0.3rem solid var(--primary);
 }
 
-.search-warpper-top .custom-radio-button input:checked + .radio-image-wrapper span.label {
+.search-wrapper-top .custom-radio-button input:checked + .radio-image-wrapper span.label {
     background-color: var(--primary);
     color: var(--white);
 }
 
-.search-warpper-top .radio-image-wrapper span.image {
+.search-wrapper-top .radio-image-wrapper span.image {
     width: 11.8rem;
     height: 11.8rem;
 }
@@ -214,7 +214,23 @@ img {
     width: 100%;
     text-align: center;
 }
+.custom-radio-button > ul {
+    width: 100%;
+}
+.custom-radio-button > ul li.nav-item button {
+    width: 100%;
+    padding: 0px;
+    color: #000;
+    text-transform: capitalize;
+}
 
+.custom-radio-button > ul li.nav-item {
+    width: 25%;
+}
+.custom-radio-button > ul li.nav-item button.active {
+    background: transparent;
+    color: #000;
+}
 .search-wrapper-middle {
     padding: 1.7rem 0 0.3rem;
     margin: 0 -1rem;
@@ -296,34 +312,34 @@ input.form-control {
     font-size: 1.4rem;
 }
 
-.custom-raion-button-2 {
+.Custom-radio-button-2 {
     display: flex;
 }
 
-.custom-raion-button-2 .radion-wrapper {
+.Custom-radio-button-2 .radion-wrapper {
     width: 18%;
     padding-right: 1.4rem;
 }
 
-.custom-raion-button-2 input[type="radio"],
-.custom-raion-button-2 input[type="checkbox"] {
+.Custom-radio-button-2 input[type="radio"],
+.Custom-radio-button-2 input[type="checkbox"] {
     position: absolute;
     opacity: 0;
 }
 
-.custom-raion-button-2 .radion-wrapper label {
+.Custom-radio-button-2 .radion-wrapper label {
     width: 100%;
     cursor: pointer;
 }
 
-.custom-raion-button-2 .radion-wrapper label span {
+.Custom-radio-button-2 .radion-wrapper label span {
     display: block;
     border: 0.1rem solid var(--light-gray);
     text-align: center;
     padding: 1.1rem;
 }
 
-.custom-raion-button-2 .radion-wrapper label span b {
+.Custom-radio-button-2 .radion-wrapper label span b {
     display: block;
 }
 
@@ -348,7 +364,7 @@ input.form-control {
     width: 29%;
 }
 
-.custom-raion-button-2 .radion-wrapper label input:checked + span {
+.Custom-radio-button-2 .radion-wrapper label input:checked + span {
     background-color: var(--primary);
     color: var(--white);
 }
@@ -778,7 +794,10 @@ footer ul li span {}
 .social-icons li img {
     margin-right: 0.6rem;
 }
-
+.social-icons > ul li:nth-last-child(1) img {
+    min-height: 20px;
+    filter: invert(1);
+}
 footer h2 {
     font-family: 'Raleway';
     font-size: 2rem;
@@ -903,7 +922,7 @@ ul.footer-link li {
         font-size: 9px;
     }
     .header-text-wrapper h1{
-        font-size: 5rem;
+        font-size: 4rem;
     }
     .search-form-container .what-i-have,
     .custom-radio-button{
@@ -917,21 +936,24 @@ ul.footer-link li {
     .search-wrapper-middle .radio-button-inner {
         width: 100%;
         text-align: center;
-        margin-bottom: 38px;
     }
-    .search-wrapper-middle .radio-button-inner{
+    .search-wrapper-middle .custom-radio-button {
+        padding-bottom: 6px;
+        position: relative;
+    }
+    /* .search-wrapper-middle .radio-button-inner{
         width: 45%;
-    }
+    } */
     #trigger-menu-sidebar .line{
         transition: all 0.3s;;
     }
     .field-with-icon input.form-control{
         margin-bottom: 10px;;
     }
-    .custom-raion-button-2{
+    .Custom-radio-button-2{
         flex-wrap: wrap;
     }
-    .custom-raion-button-2 .radion-wrapper {
+    .Custom-radio-button-2 .radion-wrapper {
         width: 50%;
         margin-bottom: 15px;
     }
@@ -941,7 +963,7 @@ ul.footer-link li {
     .btn.btn-primary.btn-large{
         min-height: 50px;;
     }
-    .custom-raion-button-2 .radion-wrapper:nth-child(2n){
+    .Custom-radio-button-2 .radion-wrapper:nth-child(2n){
         margin-right: 0;
         padding-right: 0;
         padding-left: 1.4rem;
@@ -987,11 +1009,59 @@ ul.footer-link li {
     font-weight: 700;
     line-height: 75.14px;
 }
-.about-video-wrapper video {
+/* .about-video-wrapper video {
     width: 100%;
-    height: 100%;
+    max-height: 550px;
     aspect-ratio: 9 / 4.96;
     object-fit: cover;
+} */
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+} 
+.video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    max-height: 550px;
+}
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    cursor: pointer;
+    transition: opacity 0.5s;
+    max-height: 550px;
+}
+.video-overlay.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+.video-title {
+    font-size: 34px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Raleway';
+}
+.play-button {
+    background: url(https://img.icons8.com/ios-filled/50/ffffff/play--v1.png) no-repeat center center;
+    background-size: contain;
+    width: 64px;
+    height: 64px;
+    cursor: pointer;
+    border: 1px solid;
+    border-radius: 50px;
+    background-size: 30px;
 }
 .section.section-about-content .section-title h2 {
     margin-top: 98px;
@@ -1005,17 +1075,14 @@ ul.footer-link li {
 }
 .section.section-about-content .section-content {
     font-size: 2.4rem;
-    margin-top: 6.9rem;
+    margin-top: 4rem;
     line-height: 1.16;
     font-family: 'Raleway';
 }
-.section.section-about-content .section-content {
-    font-size: 2.4rem;
-    margin-top: 7.4rem;
-    line-height: 1.16;
-}
 .section.section-about-content .section-content p {
     margin-bottom: 2.8rem;
+    color: #646464;
+    font-size: 1.8rem;
 }
 section.section.section-about-bottom {
     margin-top: 5px;
@@ -1023,6 +1090,9 @@ section.section.section-about-bottom {
 }
 section.section.section-about-bottom .section-title h2{
     margin-bottom: 2rem;;
+}
+.section-about-us .page-title {
+    padding: 20px 0px;
 }
 .about-reviews-section {
     margin-top: 10rem;
@@ -1109,7 +1179,7 @@ section.section.section-about-bottom .section-title h2{
 .custom-tab-menu .blog-filter-button.active:after{
     content: "";
     position: absolute;
-    bottom: -7px;
+    bottom: -8px;
     left: 0;
     right: 0;
     height: 7px;
@@ -1494,6 +1564,9 @@ section.section.section-about-bottom .section-title h2{
     display: flex;
     align-items: center;
     margin-top: 18px;
+}
+.pets-add .cards-data {
+    flex-wrap: wrap;
 }
 .add-card:after {
     content: "";
@@ -2541,8 +2614,8 @@ section.booking-services {
     border: none;
 }
 .calender-column a.ui-state-highlight {
-    background: var(--primary) !important;
-    color: var(--white) !important;
+    background: transparent !important;
+    color: var(--black) !important;
 }
 .calender-column .selected a{
     background: var(--primary) !important;
@@ -2743,7 +2816,7 @@ section.pet-skip-calender h2 {
     border-radius: 30px;
     padding: 12px 18px;
     margin-right: 16px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 .sitter-list-btns {
     display: flex;
@@ -2760,7 +2833,7 @@ section.pet-skip-calender h2 {
     align-items: center;
     padding: 0px 6px;
     margin-right: 19px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 .search-feild input {
     background: transparent;
@@ -2876,6 +2949,7 @@ a.sort {
 section.filter-banner {
     background-image: url(../images/sitter-banner.png);
     background-repeat: no-repeat;
+    background-size: cover;
     margin-bottom: 20px;
     background-position: bottom;
     padding: 50px 0px;
@@ -2906,6 +2980,7 @@ section.filter-banner {
     background: #fff;
     height: 66px;
     overflow: hidden;
+    padding: 0px 10px;
 }
 section.filter-fields-section h3 {
     font-family: 'Raleway';
@@ -3000,7 +3075,7 @@ input#Dates {
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.dig-size-item {
+.dog-size-item {
     margin: 0px 6px 8px 6px;
 }
 .rs-bg {
@@ -3255,6 +3330,9 @@ div#about h3 {
 }
 .experience-item img {
     margin-right: 15px;
+    height: 65px;
+    width: 65px;
+    border-radius: 50px;
 }
 
 .experience-item p {
@@ -3366,7 +3444,7 @@ div#skill-amenities {
 .amenities-boxes > h3{
     margin-bottom: 19px;
 }
-.s-dog-sizes .dig-size-item img {
+.s-dog-sizes .dog-size-item img {
     max-height: 130px;
     max-width: 130px;
 }
@@ -3379,17 +3457,17 @@ div#skill-amenities {
 .s-dog-sizes .dog-size-boxes {
     margin-top: 29px;
 }
-.s-dog-sizes .dog-size-boxes .dig-size-item:hover p {
+.s-dog-sizes .dog-size-boxes .dog-size-item:hover p {
     color: var(--primary);
 }
-.s-dog-sizes .dog-size-boxes .dig-size-item:hover img {
+.s-dog-sizes .dog-size-boxes .dog-size-item:hover img {
     border-color: var(--primary);
 }
-.s-dog-sizes .dog-size-boxes .dig-size-item {
+.s-dog-sizes .dog-size-boxes .dog-size-item {
     margin-right: 22px;
     cursor: pointer;
 }
-.s-dog-sizes .dig-size-item img {
+.s-dog-sizes .dog-size-item img {
     max-height: 130px;
     max-width: 130px;
     border: 3px solid transparent;
@@ -3738,8 +3816,12 @@ section.schedule-review .profile-book-btns .btn {
 .schedule-dates {
     display: flex;
     align-items: flex-start;
-    flex-wrap: wrap;
     margin-top: 23px;
+}
+.schedule-group-cards {
+    display: flex;
+    align-items: flex-start;
+    overflow: auto;
 }
 .sch-head {
     min-width: 76px;
@@ -3802,6 +3884,11 @@ section.schedule-review .profile-book-btns .btn {
     height: 66px;
     padding: 10px 14px;
     margin-bottom: 35px;
+}
+.search-feild i {
+    color: var(--primary);
+    font-size: 20px;
+    margin: 0px 13px;
 }
 .booking-schedule-fields label {
     font-family: 'Lato';
@@ -4510,6 +4597,10 @@ section.edit-pet-head {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    box-shadow: unset;
+}
+.edit-head-data .search-wrapper-top:after{
+    display: none;
 }
 .edit-head-data h4 {
     font-family: 'Lato';
@@ -4605,6 +4696,7 @@ input#Birthday::-webkit-calendar-picker-indicator{
     border-radius: 10px;
     resize: none;
     min-height: 174px;
+    border: 1px solid rgba(153, 153, 153, 1);
 }
 .edit-field-textarea {
     margin-top: 20px;
@@ -4654,6 +4746,11 @@ section.edit-pet-body:has(.saved-pet-options) {
 }
 .pet-placeholder-image {
     text-align: center;
+}
+.pet-placeholder-image > img {
+    height: 240px;
+    width: 240px;
+    border-radius: 50px;
 }
 .top-saved-row {
     display: flex;
@@ -4726,6 +4823,7 @@ section.edit-pet-body:has(.saved-pet-options) {
     align-items: center;
     justify-content: center;
     border-radius: 20px;
+    width: 100%;
 }
 .contact-fields textarea {
     border: 1px solid rgba(18, 17, 11, 1);
@@ -4740,10 +4838,15 @@ section.edit-pet-body:has(.saved-pet-options) {
     min-height: 234px;
     border-radius: 10px;
 }
+.contact-fields label {
+    font-size: 20px;
+    font-family: 'Raleway';
+    margin-bottom: 9px;
+}
 .contact-fields input {
     border: 1px solid rgba(18, 17, 11, 1);
     height: 59px;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     font-family: 'Raleway';
     font-size: 16px;
     font-weight: 500;
@@ -4787,7 +4890,7 @@ section.edit-pet-body:has(.saved-pet-options) {
     margin-right: 10px;
 }
 .contact-link-item h3 {
-    font-family: 'Poppins Bold';
+    font-family: 'Lato';
     font-size: 24px;
     font-weight: 700;
     line-height: 28.8px;
@@ -4799,14 +4902,14 @@ section.edit-pet-body:has(.saved-pet-options) {
     align-items: center;
     margin-right: 10px;
 }
-.contact-page-links {
+.contact-page-links > address {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 80px;
 }
-.cantact-page-info {
+.contact-page-info {
     margin-top: 73px;
     padding: 0px 40px;
     margin-bottom: 60px;
@@ -5545,7 +5648,7 @@ a.edit-profile-btn img {
     .profile-upload-sections{
         padding: 0px;
     }
-    .cantact-page-info{
+    .contact-page-info{
         padding: 0px;
     }
     .terms-page-info{
@@ -5575,6 +5678,7 @@ a.edit-profile-btn img {
     }
     .dashboard-inner {
         overflow: hidden;
+        padding-bottom: 18px;
         margin-top: 40px;
     }
     body:has(.dashboard-sidebar.active){
@@ -5662,6 +5766,7 @@ a.edit-profile-btn img {
     }
     .sitter-step-info {
         text-align: center !important;
+        padding: 0px 15px !important;
     }
     .become-sitter-body-data {
         display: block;
@@ -5691,6 +5796,7 @@ a.edit-profile-btn img {
     .messages-side-bar-open {
         display: block;
         margin-right: 12px;
+        margin-left: -6px;
     }
     .messages-chat-head {
         padding-left: 20px;
@@ -5713,13 +5819,15 @@ a.edit-profile-btn img {
         width: 100%;
         position: relative;
     }
-    a.messages-side-bar-open span {
-        width: 25px;
+    a.messages-side-bar-open i {
+        font-size: 25px;
         display: block;
-        height: 4px;
         margin-bottom: 3px;
         position: relative;
-        background-color: var(--primary);
+        color: var(--primary);
+    }
+    a.messages-side-bar-open {
+        text-decoration: none;
     }
     section.checklist-pg .row {
         flex-direction: column-reverse;
@@ -5727,14 +5835,240 @@ a.edit-profile-btn img {
     .checklist-map {
         height: 400px;
     }
+    .profile-book-section {
+        padding: 0px 29px;
+    }
+    .carousel-control-prev {
+        left: 0;
+    }
+    .carousel-control-next {
+        right: 0;
+    }
+    .contact-fields h1{
+        font-size: 45px;
+        margin-bottom: 10px;
+        line-height: 46.14px;
+    }
+    .contact-fields p {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    .contact-page-info {
+        padding: 0px 15px;
+    }
+    .sitter-check-item {
+        min-width: 18%;
+    }
+    .sitter-check-item p {
+        font-size: 16px;
+    }
+    .sitter-check-item.ac-border span {
+        height: 28px;
+        width: 28px;
+        top: -17px;
+    }
+    .sitter-check-item span {
+        height: 20px;
+        width: 20px;
+        top: -12px;
+    }
+    .sitter-top-check .sitter-check-item:nth-last-child(1) span {
+        top: -10px;
+    }
+    .become-sitter-banner {
+        background-size: contain;
+    }
+    .become-sitter-banner-info h2{
+        max-width: unset;
+    }
+    .add-pet-card p{
+        font-size: 22px;
+    }
+    .add-pet-btns {
+        margin-top: 19px;
+        padding: 0px 10px;
+    }
+    .add-pet-btns a.btn {
+        padding: 15px;
+        min-width: 48%;
+        font-size: 16px;
+    }
+    .walk-btns a {
+        padding: 15px;
+        min-width: 48%;
+        font-size: 16px;
+        margin: 0px;
+    }
+    .pet-needs-walk {
+        margin-top: 90px;
+        padding: 40px 15px;
+    }
+    .walk-btns{
+        justify-content: space-between;
+    }
+    .pet-needs-walk h2 {
+        font-size: 24px;
+    }
+    .pets-forwalk-profile {
+        margin-top: 25px;
+    }
+    .pet-profile > div img {
+        height: 100px;
+        width: 100px;
+        border-radius: 50px;
+        object-fit: cover;
+    }
+    .pet-profile > div {
+        height: 135px;
+        width: 135px;
+    }
+    .calender-column {
+        margin: 0px 15px;
+    }
+    .calender-btns {
+        padding: 0px 15px;
+        justify-content: space-between;
+    }
+    .calender-btns a {
+        padding: 15px;
+        font-size: 16px;
+        min-width: 48%;
+        margin: 0px;
+        min-height: unset;
+    }
+    .booking-services .btn {
+        padding: 15px;
+        font-size: 16px;
+    }
+    .h-head-item img {
+        height: 80px;
+        width: 80px;
+    }
+    .edit-head-data h4 {
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    .h-head-item .btn {
+        font-size: 16px;
+        line-height: 19px;
+        min-width: 90px;
+    }
+    .pet-placeholder-image > img {
+        height: 140px;
+        width: 140px;
+    }
+    .edit-pet-options label {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+    .edit-pet-options input {
+        height: 45px;
+        font-size: 16px;
+    }
+    .edit-pet-options select {
+        height: 45px;
+        font-size: 16px;
+        padding-left: 45px;
+    }
+    input#Birthday {
+        padding-left: 45px;
+    }
+    .edit-field-item {
+        margin-bottom: 6px;
+    }
+    .edit-field-item img {
+        max-width: 30px;
+        bottom: 7px;
+    }
+    input#Birthday::-webkit-calendar-picker-indicator{
+        left: 4px;
+        height: 25px;
+        width: 25px;
+    }
+    input#Type {
+        padding-left: 45px;
+    }
+    .edit-field-textarea {
+        margin-top: 4px;
+    }
+    .edit-field-textarea textarea {
+        min-height: 100px;
+    }
+    .gall-upload h3{
+        font-size: 20px;
+    }
+    .gall-upload {
+        margin-top: 40px;
+    }
+    .gall-upload .add-pet {
+        min-height: 140px;
+        min-width: 140px;
+    }
+    .up-gallery-item {
+        height: 140px;
+        width: 140px;
+    }
+    .edit-pet-options .btn {
+        font-size: 16px;
+        max-width: 150px;
+        padding: 15px;
+    }
+    .edit-pet-body-data {
+        padding: 0px 15px;
+    }
+    .pet-placeholder-image h3 {
+        margin-top: 10px;
+        font-size: 24px;
+        line-height: 20px;
+    }
+    .pet-placeholder-image .btn{
+        font-size: 16px;
+    }
+    .top-saved-item img {
+        max-width: 40px;
+    }
+    .top-saved-item {
+        margin-bottom: 20px;
+        margin-right: 20px;
+    }
+    .saved-pet-options h3 {
+        font-size: 18px;
+        line-height: 20px;
+    }
+    .saved-pet-options p {
+        font-size: 18px;
+        line-height: 20px;
+    }
+    .short-bio h3 {
+        margin-bottom: 5px;
+    }
+    .short-bio > p {
+        font-size: 16px;
+    }
+    .vaca-record {
+        margin-top: 40px;
+    }
+    .vaca-record img {
+        height: 130px;
+        width: 130px;
+    }
+    .header-text-wrapper{
+        padding-top: 0px;
+    }
+    .header-text-wrapper p {
+        font-size: 2rem;
+    }
+    .section-title p {
+        font-size: 2rem;
+    }
 }
 @media(max-width:767px){
-    .app-filter-btns {
-        flex-direction: column;
+    .app-filter-btns .btn {
+        margin-bottom: 10px;
     }
     .app-filter-btns .btn {
-        width: 100%;
-        margin-bottom: 10px;
+        font-size: 18px;
+        padding: 12px 0px;
     }
     .dog-size-boxes {
         justify-content: center;
@@ -5751,6 +6085,48 @@ a.edit-profile-btn img {
         margin-bottom: 23px;
         margin-top: -15px;
     }
+    .chat-footer {
+        padding: 0px 14px 0px 14px;
+    }
+    .message-input-bar input{
+        width: 83%;
+    }
+    .checklist-bar {
+        flex-wrap: wrap;
+        padding-right: 0px;
+    }
+    .contact-page-map{
+        margin-top: 20px;
+    }
+    .contact-link-item img {
+        max-width: 50px;
+    }
+    .contact-page-links > address {
+        margin-top: 50px;
+    }
+    .contact-link-item {
+        margin-bottom: 15px;
+    }
+    .skills-info > .row > .col-md-6 {
+        width: 50%;
+    }
+    .search-wrapper-top .radio-image-wrapper span.image {
+        width: 7rem;
+        height: 7rem;
+    }
+    .radio-image-wrapper span.image {
+        width: 7rem;
+        height: 7rem;
+    }
+    .search-form-container .what-i-have span.radio-image-wrapper span.label{
+        font-size: 2rem;
+    }
+    .btn.btn-primary.btn-large {
+        font-size: 2rem;
+    }
+    .section.section-easy-pet-care {
+        padding-top: 0px;
+    }
 }
 @media(max-width:667px){
     .booking-tabs ul {
@@ -5765,8 +6141,418 @@ a.edit-profile-btn img {
         text-align: center;
         border-bottom: 8px solid #F5EEEE;
     }
+    section.filter-banner{
+        padding: 50px 20px;
+    }
+    .filter-search-input input{
+        font-size: 16px;
+    }
+    .filter-search-input{
+        height: 50px;
+    }
+    .filter-fields-container {
+        padding: 35px 20px;
+    }
+    .filter-fields-box input {
+        height: 45px;
+        font-size: 16px;
+        padding-left: 4px;
+    }
+    .section-dashboard:has(.messages-chat-section) .header-inner {
+        display: none;
+    }
+    .check-option-item {
+        height: max-content;
+        width: 18%;
+        margin-right: 6px;
+    }
+    .check-option-item > span {
+        font-size: 12px;
+        margin-top: 0px;
+    }
+    .check-option-item p {
+        font-size: 14px;
+    }
+    .checklist-options {
+        justify-content: center;
+    }
+    .checklist-item {
+        margin-right: 6px;
+    }
+    .checklist-users img {
+        height: 50px;
+        width: 50px;
+        margin-bottom: 5px;
+    }
+    .checklist-users h3 {
+        font-size: 14px;
+    }
+    .checklist-time {
+        height: 60px;
+        width: 135px;
+        margin-top: 0px;
+        padding: 2px;
+    }
+    .checklist-time img {
+        margin-right: 5px;
+    }
+    .checklist-time span {
+        font-size: 12px;
+    }
+    .checklist-time p {
+        font-size: 14px;
+        margin: 0px;
+    }
+    .checklist-page-btns {
+        margin-top: 0px;
+    }
+    .checklist-page-btns .btn-secondary {
+        font-size: 16px;
+        margin-right: 5px;
+        padding: 11px 0px;
+        min-width: 48%;
+    }
+    .checklist-data .btn-primary {
+        font-family: 'Lato';
+        font-size: 16px;
+        margin-top: 18px;
+        padding: 15px 5px;
+    }
+    .profile-book-section .review-card {
+        min-height: max-content;
+        margin-top: 4px;
+        padding: 10px;
+    }
+    .profile-book-section .review-card-top {
+        padding: 10px 39px 0px 33px;
+    }
+    .profile-book-section .review-card-top img {
+        height: 80px;
+        width: 80px;
+    }
+    .profile-book-section .review-card-top h3 {
+        font-size: 22px !important;
+        line-height: 21px;
+    }
+    .profile-book-section .review-card-top span {
+        font-size: 16px !important;
+    }
+    .profile-book-section .review-card-bottom {
+        margin-top: 8px;
+    }
+    .profile-book-btns .btn{
+        font-size: 18px;
+    }
+    .profile-book-btns .btn img {
+        max-height: 35px;
+        margin-right: 10px;
+    }
+    .profile-book-btns {
+        margin-top: 0px;
+    }
+    .sitter-profile-btns a {
+        font-size: 16px;
+        border-bottom: 4px solid transparent;
+    }
+    .p-pet-items img {
+        height: 80px;
+        width: 80px;
+        margin-bottom: 10px;
+    }
+    .p-pet-items h4 {
+        font-size: 18px;
+        line-height: 20px;
+    }
+    .s-dog-sizes .dog-size-item img {
+        width: 90px;
+    }
+    .dog-size-boxes p {
+        font-size: 12px;
+    }
+    .p-pet-items {
+        margin-right: 10px;
+    }
+    .ser-fee-item h5{
+        font-size: 14px;
+    }
+    .ser-fee-item p{
+        font-size: 12px;
+    }
+    .experience-item{
+        min-height:65px;
+    }
+    .experience-item img {
+        margin-right: 10px;
+        height: 50px;
+        width: 50px;
+    }
+    .experience-item h4 {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .experience-item p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    div#about > p{
+        font-size: 16px;
+    }
+    .sitter-profile-info {
+        padding: 0px 15px;
+    }
+    .s-dog-sizes .dog-size-boxes .dog-size-item {
+        margin-right: 10px;
+        cursor: pointer;
+    }
+    .filter-fields-box label {
+        font-size: 16px;
+        margin-bottom: 0px;
+    }
+    .filter-search-input2{
+        margin-bottom: 3px;
+    }
+    input[type="date"]::-webkit-calendar-picker-indicator {
+        left: 18px;
+        width: 20px;
+        height: 20px;
+    }
+    .filter-search-input2 img {
+        width: 36px;
+    }
+    .filter-search-input img {
+        width: 36px;
+    }
+    input#Dates {
+        padding: 0px 10px 0px 52px;
+        position: relative;
+        margin-bottom: 3px;
+    }
+    .filter-fields-box select{
+        height: 45px;
+        font-size: 16px;
+    }
+    .dog-sizes p {
+        font-size: 14px;
+    }
+    .dog-size-item {
+        margin: 0px 4px 8px 4px;
+    }
+    .dog-size-item img {
+        max-width: 100px;
+    }
+    .rnge-slider p {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+    .rs-bg {
+        top: 9px !important;
+    }
+    .rs-selected {
+        top: 9px !important;
+    }
+    .rs-pointer {
+        height: 20px !important;
+        width: 20px !important;
+    }
+    .rs-scale span ins {
+        font-size: 18px !important;
+    }
+    .price-range .rs-scale span:nth-child(1) ins:before {
+        left: -13px;
+    }
+    .rs-container {
+        margin-bottom: 34px;
+    }
+    .rs-container .rs-scale span ins {
+        margin-top: -3px;
+    }
+    .skills p {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .skills-item {
+        height: 100px;
+        padding: 5px;
+        margin-bottom: 14px;
+    }
+    .skills-item img {
+        margin-top: -20px;
+        max-width: 50px;
+    }
+    .skills-item span {
+        font-size: 12px;
+        margin-top: -17px;
+    }
+    .contact-fields h1 {
+        font-size: 34px;
+        line-height: 33.14px;
+    }
+    .contact-fields p {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .contact-fields input {
+        height: 45px;
+        margin-bottom: 15px;
+    }
+    .contact-fields .btn {
+        font-size: 18px;
+        padding: 15px;
+        min-height: unset;
+    }
+    .contact-link-item h3{
+        font-size: 18px;
+    }
+    .contact-link-item p{
+        font-size: 18px;
+    }
+    section.schedule-review .profile-book-btns .btn {
+        max-width: 100%;
+    }
+    .booking-schedule {
+        margin-top: 25px;
+        padding: 0px 15px;
+    }
+    .scedule-group {
+        min-width: 70px;
+        margin-right: 10px;
+    }
+    .sch-date-item{
+        min-height: 70px;
+    }
+    .schedule-dates h3{
+        font-size: 20px;
+    }
+    .search-field {
+        margin-top: 10px;
+        height: 45px;
+        margin-bottom: 10px;
+    }
+    .search-field input {
+        font-size: 16px;
+        padding-left: 4px;
+    }
+    .booking-schedule-fields label{
+        font-size: 18px;
+    }
+    .booking-schedule-fields textarea {
+        width: 100%;
+        margin-top: 10px;
+        padding: 10px;
+        min-height: 100px;
+        font-size: 16px;
+    }
+    .booking-schedule-fields {
+        padding: 0px 15px;
+    }
+    .fee-breakdown {
+        padding: 0px 15px;
+    }
+    .fee-breakdown p {
+        font-size: 16px;
+        line-height: 19px;
+        margin-bottom: 0px;
+    }
+    .total-walks {
+        margin-top: 10px;
+        padding: 0px;
+    }
+    .total-walks p {
+        font-size: 18px;
+    }
+    .total-walks .btn {
+        font-size: 16px;
+        padding: 10px;
+    }
+    .sitter-location-img img {
+        width: 100%;
+        border-radius: 10px;
+    }
+    .sitter-location-img {
+        padding: 0px 10px;
+    }
+    .become-sitter-banner-info {
+        padding: 30px 20px;
+    }
+    .become-sitter-banner-info h2 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .become-sitter-banner-info p {
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .become-sitter-banner-info .btn {
+        font-size: 18px;
+        padding: 13px 0px;
+        max-width: 200px;
+    }
+    .sitter-step-info {
+        margin-top: 25px;
+        padding-left: 29px;
+    }
+    .sitter-step-info h4 {
+        font-size: 32px;
+        margin-bottom: 13px;
+    }
+    .sitter-step-info h3{
+        font-size: 22px;
+    }
+    .sitter-step-info p{
+        margin-bottom: 10px;
+    }
+    .sitter-list-btns {
+        padding: 0px 15px;
+    }
+    .sitter-list-info {
+        padding: 0px 15px;
+    }
+    .sitter-tabs.active > .row .col-lg-6 .review-card .review-card-top img {
+        height: 80px;
+        width: 80px;
+    }
+    .edit-head-data {
+        display: block;
+        padding: 0px 15px;
+    }
+    .edit-head-data h4 {
+        margin-bottom: 10px;
+    }
+    .h-head-item img {
+        height: 70px;
+        width: 70px;
+        margin-right: 10px;
+    }
+    .h-head-item {
+        margin-bottom: 10px;
+    }
+    section.edit-pet-head{
+        margin-top: 25px;
+    }
+    body:has(.section-blog-nav) .page-title h1 {
+        font-size: 4rem;
+        line-height: 40px;
+    }
+    section.section.section-blog-nav {
+        margin-top: 30px;
+    }
+    .custom-tab-menu .blog-filter-button {
+        font-size: 14px;
+        padding: 4px 32px 5px;
+    }
+    .section-blog-nav .custom-tab-menu ul li {
+        border-bottom: 5px solid rgba(245, 238, 238, 1);
+        margin-bottom: 10px;
+    }
+    .custom-tab-menu .blog-filter-button.active:after {
+        bottom: -5px;
+        height: 5px;
+    }
 }
 @media(max-width:500px){
+    .message-input-bar input {
+        width: 75%;
+    }
     .sitter-tabs.active > .row .col-lg-6 .review-card {
         flex-direction: column;
         align-items: end;
@@ -5787,7 +6573,30 @@ a.edit-profile-btn img {
     .gall-upload .cards-data {
         justify-content: center;
     }
-
+    .users-message-list {
+        padding: 26px 15px 67px 15px;
+    }
+    .checklist-data {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .sitter-check-item {
+        min-width: 15%;
+        padding-top: 13px;
+    }
+    .sitter-check-item p {
+        font-size: 12px;
+    }
+    .sitter-top-check .sitter-check-item:nth-last-child(1) {
+        padding-top: 16px;
+    }
+    .sitter-check-item p {
+        margin-left: 4px;
+    }
+    .custom-radio-button > ul li.nav-item {
+        width: 50%;
+        margin-bottom: 30px;
+    }
 }
 
 
