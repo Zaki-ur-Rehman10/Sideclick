@@ -170,8 +170,59 @@ $(function() {
       $("#selectedCount").text(count + " Day selected");
     }
   });
-  
+  function updateStickyPosition() {
+    var sitterProfileData = document.getElementById('sitterProfileData');
+    var stickyPosition = document.getElementById('stickyPosition');
+    var stickyMargin = document.getElementsByClassName('stickymargin');
+    var rect = sitterProfileData.getBoundingClientRect();
+    var stickyHeight = stickyPosition.offsetHeight;
 
+    // Check if the sticky element should be fixed
+    if (rect.top <= 0 && rect.bottom >= stickyHeight) {
+        stickyPosition.style.top = '0px';
+        stickyMargin.style.marginTop = '44%';
+    } else if (rect.top > 0) {
+        stickyPosition.style.top = rect.top + 'px';
+        stickyPosition.style.marginTop = '0px';
+    } else if (rect.bottom < stickyHeight) {
+        stickyPosition.style.top = (rect.bottom - stickyHeight) + 'px';
+    }
+}
+
+window.addEventListener('scroll', updateStickyPosition);
+window.addEventListener('resize', updateStickyPosition);
+
+// Initial update to set the correct position
+updateStickyPosition();
+  $(document).ready(function() {
+    function modifyElements() {
+        if ($(window).width() <= 991) {
+            // Remove class and ID from .sticky-remove
+            $('.sticky-remove').removeClass('sticky-position').removeAttr('id');
+            
+            // Add class and ID to .profile-book-btns
+        } 
+    }
+  
+    // Check on page load
+    modifyElements();
+  
+    // Check on window resize
+    $(window).resize(function() {
+        modifyElements();
+    });
+  });
+  function moveToNext(current, nextFieldID) {
+    if (current.value.length >= 1) {
+        document.getElementById(nextFieldID).focus();
+    }
+}
+
+function moveToPrevious(event, prevFieldID) {
+    if (event.key === "Backspace" && !event.target.value) {
+        document.getElementById(prevFieldID).focus();
+    }
+}
   var slider3 = new rSlider({
     target: '#sampleSlider',
     values: {min: 0, max: 50},
@@ -262,6 +313,11 @@ app.post('/your-server-endpoint-url', upload.none(), (req, res) => {
 app.listen(3000, () => {
     console.log('Server is running on port 3000');
 });
+
+
+
+
+
 
 
 
