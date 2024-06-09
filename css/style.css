@@ -3266,11 +3266,11 @@ input#Dates {
     position: relative;
     height: 500px; /* Example height, adjust as needed */
 }
-
 .sticky-position {
     position: fixed;
     top: 0;
-    min-width: 18%;
+    width: 21%;
+    max-width: 300px;
 }
 .profile-book-section .review-card {
     min-height: 295px;
